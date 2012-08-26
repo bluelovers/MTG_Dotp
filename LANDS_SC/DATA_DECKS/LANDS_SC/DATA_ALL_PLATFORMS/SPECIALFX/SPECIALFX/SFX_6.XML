@@ -1,0 +1,87 @@
+<SFXSpecialFX>
+  <SpecialFX name="COMBAT_BLADE_LARGE_ATTACK">
+    <Emitter name="blade_4_T" waitToFinish="1" playOnTarget="1" sound="Sounds\Blade_Large" start="COMBAT_DAMAGE_PUSHED" watchStackForMove="1" />
+  </SpecialFX>
+  <SpecialFX name="COMBAT_BLADE_SMALL_ATTACK">
+    <Emitter name="blade_1_T" waitToFinish="1" playOnTarget="1" sound="Sounds\Blade_Small" start="COMBAT_DAMAGE_PUSHED" watchStackForMove="1" />
+  </SpecialFX>
+  <SpecialFX name="COMBAT_CLAW_LARGE_ATTACK">
+    <Emitter name="claw_4_T" waitToFinish="1" playOnTarget="1" sound="Sounds\Claw_Large" start="COMBAT_DAMAGE_PUSHED" watchStackForMove="1" />
+  </SpecialFX>
+  <SpecialFX name="COMBAT_CLAW_SMALL_ATTACK">
+    <Emitter name="claw_1_T" waitToFinish="1" playOnTarget="1" sound="Sounds\Claw_Small" start="COMBAT_DAMAGE_PUSHED" watchStackForMove="1" />
+  </SpecialFX>
+  <SpecialFX name="TARGET_BLUNT_PLAY" playfromgraveyard="1">
+    <Emitter name="default_resolving" watchStackForEnd="1" dontAddEndTurnTrigger="1" finishTime="0.97" sound="Sounds\default_resolving" start="STACK_PUSHED" />
+    <Emitter name="blunt_4_T" playOnTarget="1" sound="Sounds\Blunt_Large" SpecialSpecialEffect="1" start="SPELL_RESOLVED" />
+  </SpecialFX>
+  <SpecialFX name="COMBAT_FANG_LARGE_ATTACK">
+    <Emitter name="fangs_4_T" waitToFinish="1" playOnTarget="1" sound="Sounds\Fangs_Large" start="COMBAT_DAMAGE_PUSHED" watchStackForMove="1" />
+  </SpecialFX>
+  <SpecialFX name="COMBAT_FANG_SMALL_ATTACK">
+    <Emitter name="fangs_1_T" waitToFinish="1" playOnTarget="1" sound="Sounds\Fangs_Small" start="COMBAT_DAMAGE_PUSHED" watchStackForMove="1" />
+  </SpecialFX>
+  <SpecialFX name="COMBAT_BITE_LARGE_ATTACK">
+    <Emitter name="bite_4_T" waitToFinish="1" playOnTarget="1" sound="Sounds\Bite_Large" start="COMBAT_DAMAGE_PUSHED" watchStackForMove="1" />
+  </SpecialFX>
+  <SpecialFX name="COMBAT_BITE_SMALL_ATTACK">
+    <Emitter name="bite_1_T" waitToFinish="1" playOnTarget="1" sound="Sounds\Bite_Small" start="COMBAT_DAMAGE_PUSHED" watchStackForMove="1" />
+  </SpecialFX>
+  <SpecialFX name="TARGET_PESTS_PLAY" playfromgraveyard="1">
+    <Emitter name="default_resolving" watchStackForEnd="1" dontAddEndTurnTrigger="1" finishTime="0.97" sound="Sounds\default_resolving" start="STACK_PUSHED" />
+    <Emitter name="pests_4_A" waitToFinish="1" highDecay="True" highStrength="0.5f" highDuration="2" rumbleTarget="ATTACKER_AND_VICTIM" sound="Sounds\Black_Large" start="SPELL_RESOLVED" />
+    <Emitter name="pests_4_T" playOnTarget="1" SpecialSpecialEffect="1" start="SPELL_RESOLVED" />
+  </SpecialFX>
+  <SpecialFX name="TARGET_FANG_PLAY" playfromgraveyard="1">
+    <Emitter name="default_resolving" watchStackForEnd="1" dontAddEndTurnTrigger="1" finishTime="0.97" sound="Sounds\default_resolving" start="STACK_PUSHED" />
+    <Emitter name="fangs_4_T" playOnTarget="1" sound="Sounds\Fangs_Large" SpecialSpecialEffect="1" start="SPELL_RESOLVED" />
+  </SpecialFX>
+  <SpecialFX name="TARGET_BITE_PLAY" playfromgraveyard="1">
+    <Emitter name="default_resolving" watchStackForEnd="1" dontAddEndTurnTrigger="1" finishTime="0.97" sound="Sounds\default_resolving" start="STACK_PUSHED" />
+    <Emitter name="bite_4_T" playOnTarget="1" sound="Sounds\Bite_Large" SpecialSpecialEffect="1" start="SPELL_RESOLVED" />
+  </SpecialFX>
+  <SpecialFX name="COMBAT_PESTS_LARGE_ATTACK">
+    <Emitter name="pests_4_A" waitToFinish="1" highDecay="True" highStrength="0.5f" highDuration="2" rumbleTarget="ATTACKER_AND_VICTIM" sound="Sounds\Black_Large" start="COMBAT_DAMAGE_PUSHED" watchStackForMove="1" />
+    <Emitter name="pests_4_T" waitToFinish="1" playOnTarget="1" start="COMBAT_DAMAGE_PUSHED" watchStackForMove="1" />
+  </SpecialFX>
+  <SpecialFX name="COMBAT_PESTS_SMALL_ATTACK">
+    <Emitter name="pests_1_A" waitToFinish="1" highDecay="True" highStrength="0.5f" highDuration="2" rumbleTarget="ATTACKER_AND_VICTIM" sound="Sounds\Black_Small" start="COMBAT_DAMAGE_PUSHED" watchStackForMove="1" />
+    <Emitter name="pests_1_T" waitToFinish="1" playOnTarget="1" start="COMBAT_DAMAGE_PUSHED" watchStackForMove="1" />
+  </SpecialFX>
+  <SpecialFX name="COMBAT_CHOP_LARGE_ATTACK">
+    <Emitter name="chop_4_T" waitToFinish="1" playOnTarget="1" sound="Sounds\Chop_Large" start="COMBAT_DAMAGE_PUSHED" watchStackForMove="1" />
+  </SpecialFX>
+  <SpecialFX name="COMBAT_CHOP_SMALL_ATTACK">
+    <Emitter name="chop_1_T" waitToFinish="1" playOnTarget="1" sound="Sounds\Chop_Small" start="COMBAT_DAMAGE_PUSHED" watchStackForMove="1" />
+  </SpecialFX>
+  <SpecialFX name="GLOBAL_MASSACRE_PLAY" playfromgraveyard="1">
+    <Emitter name="default_resolving" watchStackForEnd="1" dontAddEndTurnTrigger="1" finishTime="0.97" sound="Sounds\default_resolving" start="STACK_PUSHED" />
+    <Emitter name="global_massacre" waitToFinish="1" dontAddEndTurnTrigger="1" highDecay="True" highStrength="1f" highDuration="3" rumbleTarget="EVERYONE" sound="Sounds\Massacre" start="SPELL_RESOLVED" attachToWorld="1" lowStrength="0.6f" lowDuration="5" />
+  </SpecialFX>
+  <SpecialFX name="COMBAT_BLUNT_LARGE_ATTACK">
+    <Emitter name="blunt_4_T" waitToFinish="1" playOnTarget="1" sound="Sounds\Blunt_Large" start="COMBAT_DAMAGE_PUSHED" watchStackForMove="1" />
+  </SpecialFX>
+  <SpecialFX name="COMBAT_BLUNT_SMALL_ATTACK">
+    <Emitter name="blunt_1_T" waitToFinish="1" playOnTarget="1" sound="Sounds\Blunt_Small" start="COMBAT_DAMAGE_PUSHED" watchStackForMove="1" />
+  </SpecialFX>
+  <SpecialFX name="GLOBAL_WIND_PLAY" playfromgraveyard="1">
+    <Emitter name="default_resolving" watchStackForEnd="1" dontAddEndTurnTrigger="1" finishTime="0.97" sound="Sounds\default_resolving" start="STACK_PUSHED" />
+    <Emitter name="global_wind" waitToFinish="1" dontAddEndTurnTrigger="1" highDecay="True" highStrength="1f" highDuration="3" rumbleTarget="EVERYONE" sound="Sounds\Wind" start="SPELL_RESOLVED" attachToWorld="1" lowStrength="0.6f" lowDuration="5" />
+  </SpecialFX>
+  <SpecialFX name="TARGET_CLAW_PLAY" playfromgraveyard="1">
+    <Emitter name="default_resolving" watchStackForEnd="1" dontAddEndTurnTrigger="1" finishTime="0.97" sound="Sounds\default_resolving" start="STACK_PUSHED" />
+    <Emitter name="claw_4_T" playOnTarget="1" sound="Sounds\Claw_Large" SpecialSpecialEffect="1" start="SPELL_RESOLVED" />
+  </SpecialFX>
+  <SpecialFX name="COMBAT_DEATHSWORD_ATTACK">
+    <Emitter name="lightning_4_A" waitToFinish="1" highDecay="True" highStrength="0.5f" highDuration="2" rumbleTarget="ATTACKER_AND_VICTIM" start="COMBAT_DAMAGE_PUSHED" watchStackForMove="1" />
+    <Emitter name="pests_4_A" waitToFinish="1" start="COMBAT_DAMAGE_PUSHED" watchStackForMove="1" />
+    <Emitter name="blade_4_T" waitToFinish="1" playOnTarget="1" sound="Sounds\deathsword_T" start="COMBAT_DAMAGE_PUSHED" watchStackForMove="1" />
+    <Emitter name="pests_4_T" waitToFinish="1" playOnTarget="1" start="COMBAT_DAMAGE_PUSHED" watchStackForMove="1" />
+  </SpecialFX>
+  <SpecialFX name="COMBAT_BITE_LARGE_ATTACK">
+    <Emitter name="bite_4_T" waitToFinish="1" playOnTarget="1" sound="Sounds\Bite_Large" start="COMBAT_DAMAGE_PUSHED" watchStackForMove="1" />
+  </SpecialFX>
+  <SpecialFX name="COMBAT_BITE_SMALL_ATTACK">
+    <Emitter name="bite_1_T" waitToFinish="1" playOnTarget="1" sound="Sounds\Bite_Small" start="COMBAT_DAMAGE_PUSHED" watchStackForMove="1" />
+  </SpecialFX>
+</SFXSpecialFX>

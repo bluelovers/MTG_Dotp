@@ -1,0 +1,8 @@
+<CONFIG>
+<PLANESWALKER_NAME_TAG string="PLAYER_NAME_LANDS_SC" />
+<LARGE_AVATAR_IMAGE string="134116" />
+<MEDIUM_AVATAR_IMAGE string="PW_lands_sc" />
+<SMALL_AVATAR_IMAGE string="PW_lands_sc" />
+<SMALL_AVATAR_IMAGE_LOCKED string="PW_lands_sc_locked" />
+<MUSIC string="ALARA_MIX" />
+</CONFIG>

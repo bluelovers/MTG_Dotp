@@ -1,0 +1,85 @@
+﻿<?xml version='1.0'?>
+<CARD_V2>
+  <FILENAME text="TRANQUIL_THICKET_624015" />
+  <CARDNAME text="TRANQUIL_THICKET" />
+  <TITLE>
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[Tranquil Thicket]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[Tranquil Thicket]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[Tranquil Thicket]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[Tranquil Thicket]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[Tranquil Thicket]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[Tranquil Thicket]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[Tranquil Thicket]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[Tranquil Thicket]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[Tranquil Thicket]]></LOCALISED_TEXT>
+  </TITLE>
+  <MULTIVERSEID value="624015" />
+  <ARTID value="624015" />
+  <ARTIST name="Heather Hudson" />
+  <CASTING_COST cost="" />
+  <TYPE metaname="Land" />
+  <EXPANSION value="DPG" />
+  <RARITY metaname="C" />
+  <TRIGGERED_ABILITY internal="1" filter_zone="ZONE_IN_PLAY">
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[Tranquil Thicket enters the battlefield tapped.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[Tranquil Thicket enters the battlefield tapped.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[Tranquil Thicket enters the battlefield tapped.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[Tranquil Thicket enters the battlefield tapped.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[Tranquil Thicket enters the battlefield tapped.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[Tranquil Thicket enters the battlefield tapped.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[Tranquil Thicket enters the battlefield tapped.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[Tranquil Thicket enters the battlefield tapped.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[Tranquil Thicket enters the battlefield tapped.]]></LOCALISED_TEXT>
+    <TRIGGER value="ZONECHANGE_END" simple_qualifier="self" to_zone="ZONE_IN_PLAY" />
+    <RESOLUTION_TIME_ACTION>
+    if TriggerObject() ~= nil then
+    	TriggerObject():ComesIntoPlayTapped()  
+    end
+    </RESOLUTION_TIME_ACTION>
+  </TRIGGERED_ABILITY>
+  <MANA_ABILITY filter_zone="ZONE_IN_PLAY">
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[{T}: Add {G} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[{T}: Add {G} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[{T}: Add {G} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[{T}: Add {G} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[{T}: Add {G} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[{T}: Add {G} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[{T}: Add {G} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[{T}: Add {G} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[{T}: Add {G} to your mana pool.]]></LOCALISED_TEXT>
+    <COST type="TapSelf" />
+    <PRODUCES amount="{G}" />
+  </MANA_ABILITY>
+  <ACTIVATED_ABILITY auto_skip="1" filter_zone="ZONE_IN_PLAY" active_zone="ZONE_HAND">
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[Cycling {G} |(|{G}|, Discard this card: Draw a card.)|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[Cycling {G} |(|{G}|, Discard this card: Draw a card.)|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[Cycling {G} |(|{G}|, Discard this card: Draw a card.)|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[Cycling {G} |(|{G}|, Discard this card: Draw a card.)|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[Cycling {G} |(|{G}|, Discard this card: Draw a card.)|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[Cycling {G} |(|{G}|, Discard this card: Draw a card.)|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[Cycling {G} |(|{G}|, Discard this card: Draw a card.)|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[Cycling {G} |(|{G}|, Discard this card: Draw a card.)|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[Cycling {G} |(|{G}|, Discard this card: Draw a card.)|]]></LOCALISED_TEXT>
+    <COST type="DiscardSelf" />
+    <COST type="Mana" cost="{G}" />
+    <PLAY_TIME_ACTION>
+    MTG():FireTrigger( TRIGGER_CYCLED, Object() )
+    </PLAY_TIME_ACTION>
+    <RESOLUTION_TIME_ACTION>
+    local NumCards = 1
+    while (NumCards &gt; 0) do
+    	NumCards = NumCards - 1
+    	EffectController():DrawCard()
+    end
+    </RESOLUTION_TIME_ACTION>
+    <AI_AVAILABILITY type="in_response" />
+    <AI_AVAILABILITY step="begin_combat" turn="their_turn" />
+    <AI_AVAILABILITY step="main_1" turn="my_turn" />
+    <AI_AVAILABILITY step="declare_attackers" turn="their_turn" />
+    <AI_AVAILABILITY step="declare_blockers" />
+    <AI_AVAILABILITY step="end_of_turn" />
+    <AI_AVAILABILITY step="declare_blockers" />
+    <AI_AVAILABILITY type="in_response_dangerous" />
+  </ACTIVATED_ABILITY>
+  <HELP title="MORE_INFO_TITLE_CYCLING" body="MORE_INFO_BODY_CYCLING" zone="ZONE_ANY" />
+</CARD_V2>

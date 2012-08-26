@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+
+<WAD_HEADER>
+	<ENTRY platform="ALL" source="DATA_DECKS/LANDS_SC/DATA_ALL_PLATFORMS/" alias="Content" order="3"/>
+	<ENTRY platform="IPAD" source="DATA_DECKS/LANDS_SC/DATA_IPAD/" alias="Content" order="4"/>
+</WAD_HEADER>

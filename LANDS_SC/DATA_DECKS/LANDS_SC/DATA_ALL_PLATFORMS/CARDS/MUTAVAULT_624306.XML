@@ -1,0 +1,89 @@
+<?xml version='1.0'?>
+<CARD_V2>
+  <FILENAME text="MUTAVAULT_624306" />
+  <CARDNAME text="MUTAVAULT" />
+  <TITLE>
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[Mutavault]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[Mutavault]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[Mutavault]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[Mutavault]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[Mutavault]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[Mutavault]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[Mutavault]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[Mutavault]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[Mutavault]]></LOCALISED_TEXT>
+  </TITLE>
+  <MULTIVERSEID value="624306" />
+  <ARTID value="624306" />
+  <ARTIST name="Fred Fields" />
+  <CASTING_COST cost="" />
+  <FLAVOURTEXT>
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[Some changelings born at Velis Vel never return, but their essence never leaves.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[Some changelings born at Velis Vel never return, but their essence never leaves.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[Some changelings born at Velis Vel never return, but their essence never leaves.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[Some changelings born at Velis Vel never return, but their essence never leaves.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[Some changelings born at Velis Vel never return, but their essence never leaves.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[Some changelings born at Velis Vel never return, but their essence never leaves.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[Some changelings born at Velis Vel never return, but their essence never leaves.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[Some changelings born at Velis Vel never return, but their essence never leaves.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[Some changelings born at Velis Vel never return, but their essence never leaves.]]></LOCALISED_TEXT>
+  </FLAVOURTEXT>
+  <TYPE metaname="Land" />
+  <EXPANSION value="DPG" />
+  <RARITY metaname="R" />
+  <ACTIVATED_ABILITY forced_skip="1" filter_zone="ZONE_IN_PLAY">
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <COST type="TapSelf" />
+    <RESOLUTION_TIME_ACTION>
+    local token_count = 1
+    if token_count &gt; 0 then
+    	MTG():PutTokensIntoPlay( "_TOKEN_C_624999", token_count, EffectController() )
+    end
+    </RESOLUTION_TIME_ACTION>
+	  <AI_AVAILABILITY behaviour="MakeCreature" />
+  </ACTIVATED_ABILITY>
+  <ACTIVATED_ABILITY filter_zone="ZONE_IN_PLAY">
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[{1}: Mutavault becomes a 2/2 creature with all creature types until end of turn. It's still a land.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[{1}: Mutavault becomes a 2/2 creature with all creature types until end of turn. It's still a land.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[{1}: Mutavault becomes a 2/2 creature with all creature types until end of turn. It's still a land.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[{1}: Mutavault becomes a 2/2 creature with all creature types until end of turn. It's still a land.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[{1}: Mutavault becomes a 2/2 creature with all creature types until end of turn. It's still a land.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[{1}: Mutavault becomes a 2/2 creature with all creature types until end of turn. It's still a land.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[{1}: Mutavault becomes a 2/2 creature with all creature types until end of turn. It's still a land.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[{1}: Mutavault becomes a 2/2 creature with all creature types until end of turn. It's still a land.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[{1}: Mutavault becomes a 2/2 creature with all creature types until end of turn. It's still a land.]]></LOCALISED_TEXT>
+    <COST type="Mana" cost="{1}" />
+    <CONTINUOUS_ACTION layer="4">
+    if Object() ~= nil then
+      Object():GetCurrentCharacteristics():CardType_GetWritable(Object()):Add( CARD_TYPE_CREATURE, Object() ) 
+    end
+    </CONTINUOUS_ACTION>
+    <CONTINUOUS_ACTION layer="7B">
+    if Object() ~= nil then
+    	local characteristics = Object():GetCurrentCharacteristics()
+    	characteristics:Power_Set( 2 ) 
+    	characteristics:Toughness_Set( 2 ) 
+    end
+    </CONTINUOUS_ACTION>
+    <CONTINUOUS_ACTION layer="6">
+    if Object() ~= nil then
+      local characteristics = Object():GetCurrentCharacteristics()
+      characteristics:Characteristic_Set( CHARACTERISTIC_CHANGELING, 1 )
+    end
+    </CONTINUOUS_ACTION>
+    <DURATION simple_duration="UntilEOT" />
+    <AI_AVAILABILITY step="main_1" turn="my_turn" />
+    <AI_AVAILABILITY step="begin_combat" turn="my_turn" />
+    <AI_AVAILABILITY step="declare_attackers" turn="their_turn" />
+	  <AI_AVAILABILITY behaviour="MakeCreature" />
+  </ACTIVATED_ABILITY>
+  <TOKEN_REGISTRATION reservation="1" type="_TOKEN_C_624999" />
+</CARD_V2>

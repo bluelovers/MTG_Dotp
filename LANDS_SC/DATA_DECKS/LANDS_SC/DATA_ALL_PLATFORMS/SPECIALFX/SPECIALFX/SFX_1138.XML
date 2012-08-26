@@ -1,0 +1,16 @@
+<SFXSpecialFX>
+  <SpecialFX name="1138_WURMCOIL_ATTACK"><Emitter name="wurmcoil_T" watchStackForMove="1" waitToFinish="1" playOnTarget="1" sound="Sounds/Wurmcoil" start="COMBAT_DAMAGE_PUSHED" />
+  </SpecialFX>
+  <SpecialFX name="1138_MAGMA_ABILITY" playfromgraveyard="1">
+    <Emitter name="default_resolving" watchStackForEnd="1" dontAddEndTurnTrigger="1" finishTime="0.97" sound="Sounds/default_resolving" start="STACK_PUSHED" />
+    <Emitter name="global_magma" waitToFinish="1" dontAddEndTurnTrigger="1" highDecay="True" highStrength="1f" highDuration="7" rumbleTarget="EVERYONE" sound="Sounds/Magma" start="ABILITY_RESOLVED" attachToWorld="1" lowStrength="0.8f" lowDuration="3" />
+  </SpecialFX>
+  <SpecialFX name="1138_SUN_ABILITY" playfromgraveyard="1">
+    <Emitter name="default_resolving" watchStackForEnd="1" dontAddEndTurnTrigger="1" finishTime="0.97" sound="Sounds\default_resolving" start="STACK_PUSHED" />
+    <Emitter name="Sun_T" waitToFinish="1" highDecay="True" highStrength="0.6f" highDuration="5.5" rumbleTarget="EVERYONE" sound="Sounds\Sun_T" start="ABILITY_RESOLVED" attachToCaster="1" lowStrength="0.6f" lowDuration="5.5" lowDecay="True" />
+  </SpecialFX>
+  <SpecialFX name="1138_WRATH_PLAY" playfromgraveyard="1">
+    <Emitter name="default_resolving" watchStackForEnd="1" dontAddEndTurnTrigger="1" finishTime="0.97" sound="Sounds\default_resolving" start="STACK_PUSHED" />
+    <Emitter name="special_wrath_of_god" waitToFinish="1" dontAddEndTurnTrigger="1" highDecay="True" highStrength="1f" highDuration="3" rumbleTarget="EVERYONE" sound="Sounds\Special_WrathOfGod" start="SPELL_RESOLVED" attachToWorld="1" lowStrength="0.6f" lowDuration="5" />
+  </SpecialFX>
+</SFXSpecialFX>

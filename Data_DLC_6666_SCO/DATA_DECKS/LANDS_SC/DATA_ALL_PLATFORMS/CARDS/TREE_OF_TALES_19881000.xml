@@ -16,7 +16,7 @@
   <MULTIVERSEID value="19881000" />
   <ARTID value="19881000" />
   <ARTIST name="Rob Alexander" />
-  <CASTING_COST cost="{}" />
+  <CASTING_COST cost="" />
 <FLAVOURTEXT> -<LOCALISED_TEXT LanguageCode="en-US">
 <![CDATA[Tel-Jilad, sactum of the ancient trolls, keepers of the secret of Mirrodin's origin.]]>
 </LOCALISED_TEXT> -<LOCALISED_TEXT LanguageCode="fr-FR">

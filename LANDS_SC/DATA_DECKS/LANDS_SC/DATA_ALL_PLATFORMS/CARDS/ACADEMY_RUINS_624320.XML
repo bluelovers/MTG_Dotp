@@ -1,0 +1,89 @@
+﻿<?xml version='1.0'?>
+<CARD_V2>
+  <FILENAME text="ACADEMY_RUINS_624320" />
+  <CARDNAME text="ACADEMY_RUINS" />
+  <TITLE>
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[Academy Ruins]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[Academy Ruins]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[Academy Ruins]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[Academy Ruins]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[Academy Ruins]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[Academy Ruins]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[Academy Ruins]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[Academy Ruins]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[Academy Ruins]]></LOCALISED_TEXT>
+  </TITLE>
+  <MULTIVERSEID value="624320" />
+  <ARTID value="624320" />
+  <ARTIST name="Zoltan Boros &amp; Gabor Szikszai" />
+  <CASTING_COST cost="" />
+  <FLAVOURTEXT>
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[Its secrets once wrought the greatest artifice ever known. Now crabs loot the rubble to decorate their shells.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[Its secrets once wrought the greatest artifice ever known. Now crabs loot the rubble to decorate their shells.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[Its secrets once wrought the greatest artifice ever known. Now crabs loot the rubble to decorate their shells.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[Its secrets once wrought the greatest artifice ever known. Now crabs loot the rubble to decorate their shells.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[Its secrets once wrought the greatest artifice ever known. Now crabs loot the rubble to decorate their shells.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[Its secrets once wrought the greatest artifice ever known. Now crabs loot the rubble to decorate their shells.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[Its secrets once wrought the greatest artifice ever known. Now crabs loot the rubble to decorate their shells.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[Its secrets once wrought the greatest artifice ever known. Now crabs loot the rubble to decorate their shells.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[Its secrets once wrought the greatest artifice ever known. Now crabs loot the rubble to decorate their shells.]]></LOCALISED_TEXT>
+  </FLAVOURTEXT>
+  <TYPE metaname="Land" />
+  <EXPANSION value="DPG" />
+  <RARITY metaname="R" />
+  <MANA_ABILITY filter_zone="ZONE_IN_PLAY">
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <COST type="TapSelf" />
+    <PRODUCES amount="{1}" />
+  </MANA_ABILITY>
+  <ACTIVATED_ABILITY auto_skip="1" filter_zone="ZONE_IN_PLAY">
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[{1}{U}, {T}: Put target artifact card from your graveyard on top of your library.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[{1}{U}, {T}: Put target artifact card from your graveyard on top of your library.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[{1}{U}, {T}: Put target artifact card from your graveyard on top of your library.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[{1}{U}, {T}: Put target artifact card from your graveyard on top of your library.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[{1}{U}, {T}: Put target artifact card from your graveyard on top of your library.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[{1}{U}, {T}: Put target artifact card from your graveyard on top of your library.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[{1}{U}, {T}: Put target artifact card from your graveyard on top of your library.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[{1}{U}, {T}: Put target artifact card from your graveyard on top of your library.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[{1}{U}, {T}: Put target artifact card from your graveyard on top of your library.]]></LOCALISED_TEXT>
+    <COST type="Mana" cost="{1}{U}" />
+    <COST type="TapSelf" />
+    <AVAILABILITY>
+		return EffectController():CanAfford("{2}{U}") == 1
+		</AVAILABILITY>
+    <TARGET_DEFINITION id="0">
+    local filter = Object():GetFilter()
+    filter:Clear()
+    filter:AddCardType( CARD_TYPE_ARTIFACT )
+    filter:SetPlayer( EffectController() )
+    filter:SetZone( ZONE_GRAVEYARD )
+    filter:SetHint( HINT_ALLIED, EffectController() )
+    </TARGET_DEFINITION>
+    <TARGET_DETERMINATION>
+    return AtLeastOneTargetFromDefinition(0)
+    </TARGET_DETERMINATION>
+    <PLAY_TIME_ACTION target_choosing="1">
+    EffectController():ChooseTarget( 0, "CARD_QUERY_CHOOSE_CARD_TO_PUT_ONTO_LIBRARY", EffectDC():Make_Targets(0) )
+    </PLAY_TIME_ACTION>
+    <RESOLUTION_TIME_ACTION>
+    if EffectDC() ~= nil then 
+    	local target = EffectDC():Get_Targets(0):Get_CardPtr(0)
+    	if  target ~= nil then
+    		target:GuidedReveal( ZONE_GRAVEYARD , ZONE_LIBRARY )
+    		target:PutOnTopOfLibrary()
+    	end
+    end
+    </RESOLUTION_TIME_ACTION>
+    <AI_AVAILABILITY type="in_response" />
+    <AI_AVAILABILITY step="end_of_turn" turn="their_turn" />
+  </ACTIVATED_ABILITY>
+  <AI_BASE_SCORE score="600" zone="ZONE_IN_PLAY" />
+</CARD_V2>

@@ -1,0 +1,81 @@
+﻿<?xml version='1.0'?>
+<CARD_V2>
+  <FILENAME text="VITUGHAZI_THE_CITYTREE_624315" />
+  <CARDNAME text="VITUGHAZI_THE_CITYTREE" />
+  <TITLE>
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[Vitu-Ghazi, the City-Tree]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[Vitu-Ghazi, the City-Tree]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[Vitu-Ghazi, the City-Tree]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[Vitu-Ghazi, the City-Tree]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[Vitu-Ghazi, the City-Tree]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[Vitu-Ghazi, the City-Tree]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[Vitu-Ghazi, the City-Tree]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[Vitu-Ghazi, the City-Tree]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[Vitu-Ghazi, the City-Tree]]></LOCALISED_TEXT>
+  </TITLE>
+  <MULTIVERSEID value="624315" />
+  <ARTID value="624315" />
+  <ARTIST name="Martina Pilcerova" />
+  <CASTING_COST cost="" />
+	<FLAVOURTEXT>
+		<LOCALISED_TEXT LanguageCode="en-US"><![CDATA[In the autumn, she casts her seeds across the streets below, and come spring, her children rise in service to the Conclave.]]></LOCALISED_TEXT>
+		<LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[In the autumn, she casts her seeds across the streets below, and come spring, her children rise in service to the Conclave.]]></LOCALISED_TEXT>
+		<LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[In the autumn, she casts her seeds across the streets below, and come spring, her children rise in service to the Conclave.]]></LOCALISED_TEXT>
+		<LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[In the autumn, she casts her seeds across the streets below, and come spring, her children rise in service to the Conclave.]]></LOCALISED_TEXT>
+		<LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[In the autumn, she casts her seeds across the streets below, and come spring, her children rise in service to the Conclave.]]></LOCALISED_TEXT>
+		<LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[In the autumn, she casts her seeds across the streets below, and come spring, her children rise in service to the Conclave.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[In the autumn, she casts her seeds across the streets below, and come spring, her children rise in service to the Conclave.]]></LOCALISED_TEXT>
+		<LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[In the autumn, she casts her seeds across the streets below, and come spring, her children rise in service to the Conclave.]]></LOCALISED_TEXT>
+		<LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[In the autumn, she casts her seeds across the streets below, and come spring, her children rise in service to the Conclave.]]></LOCALISED_TEXT>
+	</FLAVOURTEXT>
+  <TYPE metaname="Land" />
+  <EXPANSION value="DPG" />
+  <RARITY metaname="U" />
+  <MANA_ABILITY filter_zone="ZONE_IN_PLAY">
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <COST type="TapSelf" />
+    <PRODUCES amount="{1}" />
+  </MANA_ABILITY>
+  <ACTIVATED_ABILITY auto_skip="1" filter_zone="ZONE_IN_PLAY">
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[{2}{G}{W}, {T}: Put a 1/1 green Saproling creature token onto the battlefield.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[{2}{G}{W}, {T}: Put a 1/1 green Saproling creature token onto the battlefield.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[{2}{G}{W}, {T}: Put a 1/1 green Saproling creature token onto the battlefield.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[{2}{G}{W}, {T}: Put a 1/1 green Saproling creature token onto the battlefield.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[{2}{G}{W}, {T}: Put a 1/1 green Saproling creature token onto the battlefield.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[{2}{G}{W}, {T}: Put a 1/1 green Saproling creature token onto the battlefield.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[{2}{G}{W}, {T}: Put a 1/1 green Saproling creature token onto the battlefield.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[{2}{G}{W}, {T}: Put a 1/1 green Saproling creature token onto the battlefield.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[{2}{G}{W}, {T}: Put a 1/1 green Saproling creature token onto the battlefield.]]></LOCALISED_TEXT>
+    <COST type="Mana" cost="{2}{G}{W}" />
+    <COST type="TapSelf" />
+    <AVAILABILITY>
+		return EffectController():CanAfford("{3}{G}{W}") == 1
+		</AVAILABILITY>
+    <RESOLUTION_TIME_ACTION>
+    local token_count = 1
+    local index = math.random(0, 1)
+    if token_count &gt; 0 then
+      if index == 0 then
+    	  MTG():PutTokensIntoPlay( "TOKEN_SAPROLING_1_1_277461", token_count, EffectController() )
+    	else
+    	  MTG():PutTokensIntoPlay( "TOKEN_SAPROLING_1_1_GARRUK_29", token_count, EffectController() )
+      end
+    end
+    </RESOLUTION_TIME_ACTION>
+    <AI_AVAILABILITY step="begin_combat" />
+    <AI_AVAILABILITY step="end_of_turn" turn="their_turn" />
+    <AI_AVAILABILITY step="declare_attackers" turn="their_turn" />
+    <AI_AVAILABILITY type="in_response_dangerous" />
+  </ACTIVATED_ABILITY>
+  <TOKEN_REGISTRATION reservation="1" type="TOKEN_SAPROLING_1_1_277461" />
+  <TOKEN_REGISTRATION reservation="1" type="TOKEN_SAPROLING_1_1_GARRUK_29" />
+  <AI_BASE_SCORE score="600" zone="ZONE_IN_PLAY" />
+</CARD_V2>

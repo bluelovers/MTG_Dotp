@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+<CARD_V2>
+  <FILENAME text="MOUNTAIN_277789" />
+  <CARDNAME text="MOUNTAIN" />
+  <TITLE>
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[Mountain]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[Montagne]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[Montaña]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[Gebirge]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[Montagna]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[山]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[산]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[Гора]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[Montanha]]></LOCALISED_TEXT>
+  </TITLE>
+  <MULTIVERSEID value="277789" />
+  <ARTID value="137572" />
+  <ARTIST name="Robh Ruppel" />
+  <CASTING_COST cost="" />
+  <SUPERTYPE metaname="Basic" />
+  <TYPE metaname="Land" />
+  <SUB_TYPE metaname="Mountain" order_de-DE="0" order_es-ES="0" order_fr-FR="0" order_it-IT="0" order_jp-JA="0" order_ko-KR="0" order_pt-BR="0" order_ru-RU="0" />
+  <EXPANSION value="DPG" />
+  <RARITY metaname="L" />
+</CARD_V2>

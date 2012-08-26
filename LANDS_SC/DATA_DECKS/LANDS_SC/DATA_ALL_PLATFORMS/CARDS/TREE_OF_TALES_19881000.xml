@@ -36,8 +36,8 @@
 </LOCALISED_TEXT> -<LOCALISED_TEXT LanguageCode="pt-BR">
 <![CDATA[Tel-Jilad, sactum of the ancient trolls, keepers of the secret of Mirrodin's origin.]]>
 </LOCALISED_TEXT> </FLAVOURTEXT>
+  <TYPE metaname="Artifact" />
   <TYPE metaname="Land" />
-  <SUPERTYPE metaname= "Artifact"/>
   <EXPANSION value="DPG" />
   <RARITY metaname="C" />
   <UTILITY_ABILITY>

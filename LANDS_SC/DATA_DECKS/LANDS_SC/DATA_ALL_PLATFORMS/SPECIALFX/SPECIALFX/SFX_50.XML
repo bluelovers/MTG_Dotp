@@ -1,0 +1,8 @@
+<SFXSpecialFX>
+  <SpecialFX name="COMBAT_BLUNT_LARGE_ATTACK">
+    <Emitter name="blunt_4_T" waitToFinish="1" playOnTarget="1" sound="Sounds\Blunt_Large" start="COMBAT_DAMAGE_PUSHED" watchStackForMove="1" />
+  </SpecialFX>
+  <SpecialFX name="COMBAT_BLUNT_SMALL_ATTACK">
+    <Emitter name="blunt_1_T" waitToFinish="1" playOnTarget="1" sound="Sounds\Blunt_Small" start="COMBAT_DAMAGE_PUSHED" watchStackForMove="1" />
+  </SpecialFX>
+</SFXSpecialFX>

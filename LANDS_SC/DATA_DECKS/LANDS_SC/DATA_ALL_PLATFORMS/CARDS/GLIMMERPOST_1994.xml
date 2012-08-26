@@ -1,0 +1,62 @@
+<?xml version='1.0'?>
+<CARD_V2>
+  <FILENAME text="GLIMMERPOST_1994" />
+  <CARDNAME text="GLIMMERPOST" />
+  <TITLE>
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[Gllimerpost]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[Gllimerpost]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[Gllimerpost]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[Gllimerpost]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[Gllimerpost]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[Gllimerpost]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[Gllimerpost]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[Gllimerpost]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[Gllimerpost]]></LOCALISED_TEXT>
+  </TITLE>
+  <MULTIVERSEID value="1994" />
+  <ARTID value="1994" />
+  <ARTIST name="Martina Pilcerova" />
+  <CASTING_COST cost="" />
+  <FLAVOURTEXT>
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[What once spied upon Mirrodin from above now waits below for another to assume control.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[What once spied upon Mirrodin from above now waits below for another to assume control.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[What once spied upon Mirrodin from above now waits below for another to assume control.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[What once spied upon Mirrodin from above now waits below for another to assume control.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[What once spied upon Mirrodin from above now waits below for another to assume control.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[What once spied upon Mirrodin from above now waits below for another to assume control.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[What once spied upon Mirrodin from above now waits below for another to assume control.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[What once spied upon Mirrodin from above now waits below for another to assume control.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[What once spied upon Mirrodin from above now waits below for another to assume control.]]></LOCALISED_TEXT>
+  </FLAVOURTEXT>
+  <TYPE metaname="Land" />
+  <SUB_TYPE metaname="Locus" order_de-DE="0" order_es-ES="0" order_fr-FR="0" order_it-IT="0" order_jp-JA="0" order_ko-KR="0" order_pt-BR="0" order_ru-RU="0" />
+  <EXPANSION value="DPG" />
+  <RARITY metaname="C" />
+ <TRIGGER_ABILITY auto_skip="1">
+     <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[When Glimmerpost enters the battlefield, you gain 1 life for each Locus on the battlefield.]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[When Glimmerpost enters the battlefield, you gain 1 life for each Locus on the battlefield.]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[When Glimmerpost enters the battlefield, you gain 1 life for each Locus on the battlefield.]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[When Glimmerpost enters the battlefield, you gain 1 life for each Locus on the battlefield.]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[When Glimmerpost enters the battlefield, you gain 1 life for each Locus on the battlefield.]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[When Glimmerpost enters the battlefield, you gain 1 life for each Locus on the battlefield.]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[When Glimmerpost enters the battlefield, you gain 1 life for each Locus on the battlefield.]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[When Glimmerpost enters the battlefield, you gain 1 life for each Locus on the battlefield.]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[When Glimmerpost enters the battlefield, you gain 1 life for each Locus on the battlefield.]]></LOCALISED_TEXT>
+     <TRIGGER value="ZONECHANGE_END" simple_qualifier="self" to_zone="ZONE_IN_PLAY" />
+	 <RESOLUTION_TIME_ACTION>
+	  local nLocus = RSN_CountPlayerCardsOfTypeInZone( EffectController(), LAND_TYPE_Locus, ZONE_IN_PLAY )
+			EffectController():GainLife( nLocus )
+    </RESOLUTION_TIME_ACTION>
+    <SFX text="TARGET_PLAYER_LIFE_PLAY" />
+  </TRIGGER_ABILITY>
+  <MANA_ABILITY>
+	<LOCALISED_TEXT LanguageCode="en-US"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <COST type="TapSelf" />
+    <PRODUCES amount="{1}" /> ´
+  </MANA_ABILITY>
+</CARD_V2>

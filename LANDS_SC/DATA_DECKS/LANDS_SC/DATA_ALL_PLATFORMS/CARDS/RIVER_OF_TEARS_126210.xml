@@ -1,0 +1,96 @@
+﻿<?xml version='1.0'?>
+<CARD_V2>
+  <FILENAME text="RIVER_OF_TEARS_126210" />
+  <CARDNAME text="RIVER_OF_TEARS" />
+  <TITLE>
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[River of Tears]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[Fiume di Lacrime]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[Fluss der Tränen]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[Rivière de larmes]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[Río de lágrimas]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[涙の川]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[River of Tears]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[Река Слёз]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[Rio de Lágrimas]]></LOCALISED_TEXT>
+  </TITLE>
+  <MULTIVERSEID value="126210" />
+  <ARTID value="A126210" />
+  <ARTIST name="Chris J. Anderson" />
+  <CASTING_COST cost="" />
+  <FLAVOURTEXT>
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[“The Westfolk wept, and their tears wore winding rivers into the cheek of the world.”
+—Glem the Lonebard, “Origins of Kholon”]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[“Le Genti dell’Ovest piansero e le loro lacrime tracciarono fiumi tortuosi sulle gote del mondo.”
+—Glem il Bardo Solitario, “Le Origini di Kholon”]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[„Das Westvolk weinte, und seine Tränen gruben tiefe Flüsse in die Wangen der Welt.”
+—Glem, der einsame Barde,„Die Ursprünge von Kholon”]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[« Les Ouestriens pleurèrent, et leurs larmes creusèrent de longs fleuves sinueux dans la joue du monde. »
+—Glem le Solibarde,« Les origines de Kholon »]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[“El pueblo del oeste llora, y sus lágrimas forman ríos que atraviesan la mejilla del mundo.”—Glem el bardo solitario, “Orígenes de Kholon”]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[西の民は嘆き、その涙はうねる川となって世界の頬へとそそいだ。
+――独り唄のグレム、「コロンの起源」]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[“The Westfolk wept, and their tears wore winding rivers into the cheek of the world.”
+—Glem the Lonebard, “Origins of Kholon”]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[“Кочевники рыдали, и их слёзы текли петляющими реками по щекам мира.”
+—Глем, Одинокий Бард, “Зарождение Холона”]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[“O povo do oeste chorou, e seu pranto abriu grandes rios na face do mundo.”
+— Glem, bardo solitário, “Origens de Kholon”]]></LOCALISED_TEXT>
+  </FLAVOURTEXT>
+  <TYPE metaname="Land" />
+  <EXPANSION value="FUT" />
+  <RARITY metaname="R" />
+  <STATIC_ABILITY filter_zone="ZONE_IN_PLAY">
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[{T}: Add {U} to your mana pool. If you played a land this turn, add {B} to your mana pool instead.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[{T}: Aggiungi {U} alla tua riserva di mana. Se hai giocato una terra in questo turno, aggiungi invece {B} alla tua riserva di mana.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[{T}: Erhöhe deinen Manavorrat um {U}. Hast du in diesem Zug bereits ein Land gespielt, erhöhe deinen Manavorrat stattdessen um {B}.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[{T} : Ajoutez {U} à votre réserve. Si vous avez joué un terrain ce tour-ci, ajoutez {B} à votre réserve à la place.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[{T}: Agrega {U} a tu reserva de maná. Si jugaste una tierra este turno, en vez de eso, agrega {B} a tu reserva de maná.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[{T}：あなたのマナ・プールに{U}を加える。 あなたがこのターンに土地をプレイしている場合、代わりにあなたのマナ・プールに{B}を加える。]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[{T}: Add {U} to your mana pool. If you played a land this turn, add {B} to your mana pool instead.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[{T}: Добавьте {U} в ваше хранилище маны. Если вы разыграли землю в этом ходу, добавьте {B} в ваше хранилище маны вместо этого.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[{T}: Adicione {U} à sua reserva de mana. Se você jogou um terreno neste turno, em vez disso, adicione {B} à sua reserva de mana.]]></LOCALISED_TEXT>
+    <CONTINUOUS_ACTION layer="6">
+    local characteristics = Object():GetCurrentCharacteristics()
+    characteristics:GrantAbility(ObjectDC():Get_Int(1)+1)
+    </CONTINUOUS_ACTION>
+  </STATIC_ABILITY>
+  <TRIGGERED_ABILITY internal="1" filter_zone="ZONE_IN_PLAY">
+    <TRIGGER value="LAND_PLAYED">
+    return TriggerObject():GetPlayer() == Object():GetPlayer() and TriggerObject() ~= Object()
+    </TRIGGER>
+    <RESOLUTION_TIME_ACTION>
+    ObjectDC():Set_Int(1, 1)
+    </RESOLUTION_TIME_ACTION>
+  </TRIGGERED_ABILITY>
+  <TRIGGERED_ABILITY internal="1" filter_zone="ZONE_IN_PLAY" active_zone="ZONE_ANY">
+    <TRIGGER value="LAND_PLAYED">
+    return TriggerObject() == Object()
+    </TRIGGER>
+    <RESOLUTION_TIME_ACTION>
+    MTG():CreateDelayedTrigger(3, nil)
+    </RESOLUTION_TIME_ACTION>
+  </TRIGGERED_ABILITY>
+  <TRIGGERED_ABILITY internal="1" filter_zone="ZONE_IN_PLAY">
+    <TRIGGER value="BEGINNING_OF_STEP" simple_qualifier="controller">
+    return ( MTG():GetStep() == STEP_CLEANUP )
+    </TRIGGER>
+    <RESOLUTION_TIME_ACTION>
+    ObjectDC():Set_Int(1, 0)
+    </RESOLUTION_TIME_ACTION>
+  </TRIGGERED_ABILITY>
+  <MANA_ABILITY resource_id="1" filter_zone="ZONE_IN_PLAY">
+    <COST type="TapSelf" />
+    <PRODUCES amount="{U}" />
+  </MANA_ABILITY>
+  <MANA_ABILITY resource_id="2" filter_zone="ZONE_IN_PLAY">
+    <COST type="TapSelf" />
+    <PRODUCES amount="{B}" />
+  </MANA_ABILITY>
+  <TRIGGERED_ABILITY resource_id="3" internal="1" filter_zone="ZONE_IN_PLAY">
+    <CLEANUP fire_once="1" />
+    <TRIGGER value="ZONECHANGE_END" simple_qualifier="self" to_zone="ZONE_IN_PLAY" />
+    <RESOLUTION_TIME_ACTION>
+    ObjectDC():Set_Int(1, 1)
+    </RESOLUTION_TIME_ACTION>
+  </TRIGGERED_ABILITY>
+</CARD_V2>

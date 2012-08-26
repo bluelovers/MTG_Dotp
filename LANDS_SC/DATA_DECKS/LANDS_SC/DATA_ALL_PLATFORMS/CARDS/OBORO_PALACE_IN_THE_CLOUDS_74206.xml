@@ -1,0 +1,64 @@
+﻿<?xml version='1.0'?>
+<CARD_V2>
+  <FILENAME text="OBORO_PALACE_IN_THE_CLOUDS_74206" />
+  <CARDNAME text="OBORO_PALACE_IN_THE_CLOUDS" />
+  <TITLE>
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[Oboro, Palace in the Clouds]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[Oboro, Palazzo nelle Nuvole]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[Oboro, Palast in den Wolken]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[Oboro, le palais dans les nuages]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[Oboro, el palacio en las nubes]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[雲の宮殿、朧宮]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[Oboro, Palace in the Clouds]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[Oboro, Palace in the Clouds]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[Oboro, Palácio nas Nuvens]]></LOCALISED_TEXT>
+  </TITLE>
+  <MULTIVERSEID value="74206" />
+  <ARTID value="A74206" />
+  <ARTIST name="Rob Alexander" />
+  <CASTING_COST cost="" />
+  <FLAVOURTEXT>
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[Here the soratami wove their endless plots—graceful, artful, and deceitful, while the unwitting world moved below.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[Qui i soratami tessevano i loro perpetui intrighi - leggiadri, scaltri e menzogneri - mentre il mondo ignaro si muoveva sotto di loro.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[Hier webten die Soratami einer endlosen Pläne, anmutig, künstlerisch und verräterisch, während die ahnungslose Welt unter ihnen vor sich hin lebte.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[C’était là que les soratami s’adonnaient aux jeux interminables des conspirations — gracieux, artistiques et trompeurs, au-dessus d’un monde qui ne se doutait de rien.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[Los soratami planeaban aquí sus tramas interminables; agraciados, hermosos y traicioneros, mientras el mundo se movía debajo, ignorante.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[空民はここで終わりの無い計略を編み続けている――優雅と美と欺瞞に満ちた計略を、下の世界を気にも留めず。]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[Here the soratami wove their endless plots—graceful, artful, and deceitful, while the unwitting world moved below.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[Here the soratami wove their endless plots—graceful, artful, and deceitful, while the unwitting world moved below.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[Aqui os soratamis teceram suas tramas infinitas — graciosas, ardilosas e enganosas, enquanto o mundo inconsciente se movia embaixo.]]></LOCALISED_TEXT>
+  </FLAVOURTEXT>
+  <SUPERTYPE metaname="Legendary" />
+  <TYPE metaname="Land" />
+  <EXPANSION value="SOK" />
+  <RARITY metaname="R" />
+  <MANA_ABILITY filter_zone="ZONE_IN_PLAY">
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[{T}: Add {U} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[{T}: Ajoutez {U} à votre réserve.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[{T}: Agrega {U} a tu reserva de maná.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[{T}: Erhöhe deinen Manavorrat um {U}.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[{T}: Aggiungi {U} alla tua riserva di mana.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[{T}：あなたのマナ・プールに{U}を加える。]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[{T}: {U}를 당신의 마나풀에 담는다.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[{T}: добавьте {U} в ваше хранилище маны.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[{T}: Adicione {U} à sua reserva de mana.]]></LOCALISED_TEXT>
+    <COST type="TapSelf" />
+    <PRODUCES amount="{U}" />
+  </MANA_ABILITY>
+  <ACTIVATED_ABILITY filter_zone="ZONE_IN_PLAY">
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[{1}: Return Oboro, Palace in the Clouds to its owner’s hand.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[{1}: Fai tornare Oboro, Palazzo nelle Nuvole in mano al suo proprietario.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[{1}: Bringe Oboro, Palast in den Wolken, auf die Hand seines Besitzers zurück.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[{1} : Renvoyez Oboro, le palais dans les nuages dans la main de son propriétaire.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[{1}: Regresa Oboro, el palacio en las nubes a la mano de su propietario.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[{1}：雲の宮殿、朧宮をオーナーの手札に戻す。]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[{1}: Return Oboro, Palace in the Clouds to its owner’s hand.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[{1}: Return Oboro, Palace in the Clouds to its owner’s hand.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[{1}: Devolve Oboro, Palácio nas Nuvens para a mão de seu dono.]]></LOCALISED_TEXT>
+    <COST type="Mana" cost="{1}" />
+    <RESOLUTION_TIME_ACTION>
+    Object():PutInHand()
+    </RESOLUTION_TIME_ACTION>
+    <AI_AVAILABILITY type="in_response" />
+  </ACTIVATED_ABILITY>
+</CARD_V2>

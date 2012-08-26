@@ -1,0 +1,88 @@
+﻿<?xml version='1.0'?>
+<CARD_V2>
+  <FILENAME text="VAULT_OF_THE_ARCHANGEL_38270938" />
+  <CARDNAME text="VAULT_OF_THE_ARCHANGEL" />
+  <TITLE>
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[Vault of the Archangel]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[Cripta dell’Arcangelo]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[Gruft des Erzengels]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[Caveau de l’archange]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[Bóveda del arcángel]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[大天使の霊堂]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[대천사의 지하실]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[Подземелье Архангела]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[Câmara do Arcanjo]]></LOCALISED_TEXT>
+  </TITLE>
+  <MULTIVERSEID value="38270938" />
+  <ARTID value="38270938" />
+  <ARTIST name="John Avon" />
+  <CASTING_COST cost="" />
+  <FLAVOURTEXT>
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[“For centuries my creation kept this world in balance. Now only her shadow remains.”
+—Sorin Markov]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[“Per secoli la mia creazione ha mantenuto in equilibrio questo mondo. Ora rimane solo la sua ombra.”
+—Sorin Markov]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[„Über Jahrhunderte hinweg hielt meine Kreation diese Welt im Gleichgewicht. Doch jetzt ist nur noch ihr Schatten da.”
+—Sorin Markov]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[« Pendant des siècles, ma création a maintenu l’équilibre de ce monde. Désormais, seule son ombre subsiste. »
+—Sorin Markov]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[“Por siglos mi creación mantuvo este mundo en equilibrio. Ahora solo queda su sombra.”
+—Sorin Markov]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[「何世紀もの間、我が造物はこの世界の均衡を保ってきた。今では彼女の影が残るのみだ。」――ソリン・マルコフ]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[“나의 피조물은 몇 백 년 동안 이 세상의 균형을 유지했지만 이제는 그녀의 그림자만이 남아있군.”
+—소린 마르코프]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[«Веками мое творение держало этот мир в равновесии. Теперь от нее осталась лишь тень».
+— Сорин Марков]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[“Durante séculos, minha criação manteve este mundo em equilíbrio. Agora, resta apenas sua sombra.”
+— Sorin Markov]]></LOCALISED_TEXT>
+  </FLAVOURTEXT>
+  <TYPE metaname="Land" />
+  <EXPANSION value="DPG" />
+  <RARITY metaname="R" />
+  <MANA_ABILITY filter_zone="ZONE_IN_PLAY">
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[{T}: Ajoutez {1} à votre réserve.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[{T}: Agrega {1} a tu reserva de maná.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[{T}: Erhöhe deinen Manavorrat um {1}.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[{T}: Aggiungi {1} alla tua riserva di mana.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[{T}：あなたのマナ・プールに{1}を加える。]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[{T}: {1}를 당신의 마나풀에 담는다.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[{T}: добавьте {1} в ваше хранилище маны.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[{T}: Adicione {1} à sua reserva de mana.]]></LOCALISED_TEXT>
+    <COST type="TapSelf" />
+    <PRODUCES amount="{1}" />
+  </MANA_ABILITY>
+  <ACTIVATED_ABILITY filter_zone="ZONE_IN_PLAY">
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[{2}{W}{B}, {T}: Creatures you control gain deathtouch and lifelink until end of turn.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[{2}{W}{B}, {T}: Le creature che controlli hanno tocco letale e legame vitale fino alla fine del turno.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[{2}{W}{B}, {T}: Kreaturen, die du kontrollierst, erhalten bis zum Ende des Zuges Todesberührung und Lebensverknüpfung.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[{2}{W}{B}, {T} : Les créatures que vous contrôlez acquièrent le contact mortel et le lien de vie jusqu’à la fin du tour.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[{2}{W}{B}, {T}: Las criaturas que controlas ganan las habilidades de toque mortal y vínculo vital hasta el final del turno.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[{2}{W}{B}, {T}：あなたがコントロールするクリーチャーは、ターン終了時まで接死と絆魂を得る。]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[{2}{W}{B}, {T}: 당신이 조종하는 생물들은 턴종료까지 치명타와 생명연결 능력을 얻는다.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[{2}{W}{B}, {T}: существа под вашим контролем получают Смертельное касание и Цепь жизни до конца хода.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[{2}{W}{B}, {T}: As criaturas que você controla ganham toque mortífero e vínculo com a vida até o final do turno.]]></LOCALISED_TEXT>
+    <COST type="Mana" cost="{2}{W}{B}" />
+    <COST type="TapSelf" />
+    <FILTER>
+    return (FilteredCard() ~= nil and
+    FilteredCard():GetCardType():Test( CARD_TYPE_CREATURE ) ~= 0 and
+    FilteredCard():GetZone() == ZONE_IN_PLAY and
+    FilteredCard():GetController() == Object():GetController())
+    </FILTER>
+    <CONTINUOUS_ACTION layer="6">
+    if FilteredCard() ~= nil then
+    	local characteristics = FilteredCard():GetCurrentCharacteristics()
+	characteristics:Characteristic_Set( CHARACTERISTIC_DEATHTOUCH, 1 )
+    	characteristics:Characteristic_Set( CHARACTERISTIC_LIFELINK, 1 )
+    end
+    </CONTINUOUS_ACTION>
+    <DURATION simple_duration="UntilEOT" />
+    <SFX text="CASTER_BUFF_PLAY" />
+    <AI_AVAILABILITY step="declare_blockers" />
+    <AI_AVAILABILITY type="in_response_dangerous" />
+  </ACTIVATED_ABILITY>
+  <HELP title="MORE_INFO_BADGE_TITLE_3" body="MORE_INFO_BADGE_BODY_3" zone="ZONE_ANY" />
+  <HELP title="MORE_INFO_BADGE_TITLE_4" body="MORE_INFO_BADGE_BODY_4" zone="ZONE_ANY" />
+  <AI_BASE_SCORE score="600" zone="ZONE_IN_PLAY" />
+</CARD_V2>

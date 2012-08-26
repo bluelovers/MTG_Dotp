@@ -1,0 +1,212 @@
+<?xml version='1.0'?>
+<CARD_V2>
+  <FILENAME text="SEACHROME_COAST_624161" />
+  <CARDNAME text="SEACHROME_COAST" />
+  <TITLE>
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[Seachrome Coast]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[Seachrome Coast]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[Seachrome Coast]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[Seachrome Coast]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[Seachrome Coast]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[Seachrome Coast]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[Seachrome Coast]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[Seachrome Coast]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[Seachrome Coast]]></LOCALISED_TEXT>
+  </TITLE>
+  <MULTIVERSEID value="624161" />
+  <ARTID value="624161" />
+  <ARTIST name="Lars Grant-West" />
+  <CASTING_COST cost="" />
+  <FLAVOURTEXT>
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[Where the Quicksilver Sea laps over the Razor Fields, the landscape reflects the suns' fading hope.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[Where the Quicksilver Sea laps over the Razor Fields, the landscape reflects the suns' fading hope.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[Where the Quicksilver Sea laps over the Razor Fields, the landscape reflects the suns' fading hope.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[Where the Quicksilver Sea laps over the Razor Fields, the landscape reflects the suns' fading hope.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[Where the Quicksilver Sea laps over the Razor Fields, the landscape reflects the suns' fading hope.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[Where the Quicksilver Sea laps over the Razor Fields, the landscape reflects the suns' fading hope.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[Where the Quicksilver Sea laps over the Razor Fields, the landscape reflects the suns' fading hope.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[Where the Quicksilver Sea laps over the Razor Fields, the landscape reflects the suns' fading hope.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[Where the Quicksilver Sea laps over the Razor Fields, the landscape reflects the suns' fading hope.]]></LOCALISED_TEXT>
+  </FLAVOURTEXT>
+  <TYPE metaname="Land" />
+  <EXPANSION value="DPG" />
+  <RARITY metaname="R" />
+  <TRIGGERED_ABILITY internal="1" filter_zone="ZONE_IN_PLAY">
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[Seachrome Coast enters the battlefield tapped unless you control two or fewer other lands.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[Seachrome Coast enters the battlefield tapped unless you control two or fewer other lands.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[Seachrome Coast enters the battlefield tapped unless you control two or fewer other lands.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[Seachrome Coast enters the battlefield tapped unless you control two or fewer other lands.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[Seachrome Coast enters the battlefield tapped unless you control two or fewer other lands.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[Seachrome Coast enters the battlefield tapped unless you control two or fewer other lands.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[Seachrome Coast enters the battlefield tapped unless you control two or fewer other lands.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[Seachrome Coast enters the battlefield tapped unless you control two or fewer other lands.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[Seachrome Coast enters the battlefield tapped unless you control two or fewer other lands.]]></LOCALISED_TEXT>
+    <TRIGGER value="ZONECHANGE_END" simple_qualifier="self" to_zone="ZONE_IN_PLAY">
+    local filter = Object():GetFilter()
+    filter:Clear()
+    filter:SetZone(ZONE_IN_PLAY)
+    filter:AddCardType(CARD_TYPE_LAND)
+    filter:SetController( EffectController() )
+    filter:NotTargetted()
+    local land_count = filter:CountStopAt( 4 )
+    if land_count &gt; 3 then
+    	return true    	
+    else    
+    	return false    	
+    end
+    </TRIGGER>
+    <RESOLUTION_TIME_ACTION>
+    if TriggerObject() ~= nil then
+    	TriggerObject():ComesIntoPlayTapped()  
+    end
+    </RESOLUTION_TIME_ACTION>
+  </TRIGGERED_ABILITY>
+  <ACTIVATED_ABILITY LKI_shield_effect_source="1" forced_skip="1" filter_zone="ZONE_IN_PLAY">
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[{T}: Add {W} or {U} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[{T}: Add {W} or {U} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[{T}: Add {W} or {U} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[{T}: Add {W} or {U} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[{T}: Add {W} or {U} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[{T}: Add {W} or {U} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[{T}: Add {W} or {U} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[{T}: Add {W} or {U} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[{T}: Add {W} or {U} to your mana pool.]]></LOCALISED_TEXT>
+    <COST type="Mana" cost="{0}" />
+    <AVAILABILITY>
+    return Object():Tapped() == 0 and EffectController():IsAI() == 0
+		</AVAILABILITY>
+    <PLAY_TIME_ACTION>
+    EffectController():BeginNewMultipleChoice()    
+    EffectController():AddMultipleChoiceAnswer( "CARD_QUERY_OPTION_MANA_W" )    
+    EffectController():AddMultipleChoiceAnswer( "CARD_QUERY_OPTION_MANA_U" )    
+    EffectController():AskMultipleChoiceQuestion( "CARD_QUERY_CHOOSE_COLOUR")
+    </PLAY_TIME_ACTION>
+    <PLAY_TIME_ACTION>
+    local decision = Object():GetMultipleChoiceResult()
+    ObjectDC():Set_Int( 1, decision )
+    </PLAY_TIME_ACTION>
+  </ACTIVATED_ABILITY>
+  <TRIGGERED_ABILITY internal="1" filter_zone="ZONE_IN_PLAY">
+    <TRIGGER value="END_OF_STEP" simple_qualifier="controller">
+    return ( EffectController():MyTurn() ~= 0 ) and ( MTG():GetStep() == STEP_DRAW ) and (EffectController():IsAI() == 0)
+    </TRIGGER>
+    <RESOLUTION_TIME_ACTION>
+    local colour = 0
+    local colour_mana = 100
+    local mana_paid = EffectController():GetTotalMana() + 2
+    local filter = Object():GetFilter()
+    filter:Clear()
+    filter:SetPlayer( EffectController() )
+    filter:SetZone( ZONE_HAND )
+    filter:AddColour( COLOUR_BLUE )
+    filter:NotTargetted()
+    local total = filter:EvaluateObjects()
+    if total &gt; 0 then
+      for i=0,total-1 do
+        local card = filter:GetNthEvaluatedObject(i)    			
+        if card ~= nil then			
+    	    if card:GetConvertedManaCost() &lt; colour_mana then	
+    	      colour_mana = card:GetConvertedManaCost()
+    	    end
+        end
+      end    		
+   	end  
+    if colour_mana &lt; mana_paid then
+      colour = 1   	
+   	end	
+    ObjectDC():Set_Int( 1, colour )
+    </RESOLUTION_TIME_ACTION>
+  </TRIGGERED_ABILITY>
+  <TRIGGERED_ABILITY internal="1" pre_trigger="1" filter_zone="ZONE_IN_PLAY" active_zone="ZONE_TRANSITION">
+    <TRIGGER value="ZONECHANGE_TRANSITION" simple_qualifier="self" to_zone="ZONE_IN_PLAY">
+    return EffectController():IsAI() == 0
+    </TRIGGER>
+    <RESOLUTION_TIME_ACTION>
+    local colour = 0
+    local mana_paid = EffectController():GetTotalMana() + 2
+    local filter = Object():GetFilter()
+    filter:Clear()
+    filter:SetPlayer( EffectController() )
+    filter:SetZone( ZONE_HAND )
+    filter:AddColour( COLOUR_BLUE )
+    filter:NotTargetted()
+    local total = filter:EvaluateObjects()
+    if total &gt; 0 then
+      for i=0,total-1 do
+        local card = filter:GetNthEvaluatedObject(i)    			
+        if card ~= nil then			
+    	    if card:GetConvertedManaCost() &lt; mana_paid then	
+    	      colour = 1
+    	    end
+        end
+      end    		
+   	end
+    ObjectDC():Set_Int( 1, colour )
+    </RESOLUTION_TIME_ACTION>
+  </TRIGGERED_ABILITY>
+  <TRIGGERED_ABILITY internal="1" pre_trigger="1" priority="-10" filter_zone="ZONE_IN_PLAY">
+    <TRIGGER value="DREW_CARD" simple_qualifier="controller">
+    local card = EffectController():Library_GetNth(0) 
+    local drawCard = MTG():Interrogate_CardsDrawnThisTurn(EffectController())
+    if card ~= nil and drawCard == 0 then
+    	return TriggerPlayer() == EffectController()
+    else
+    	return false
+    end
+    </TRIGGER>
+    <RESOLUTION_TIME_ACTION>
+    local card = EffectController():Library_GetNth(0) 
+    if (card:GetCardName() == "BANISHING_STROKE" or card:GetCardName() == "ENTREAT_THE_ANGELS" or card:GetCardName() == "TERMINUS") and EffectController():CanAfford("{W}") == 0 then
+      ObjectDC():Set_Int( 1, 0 )
+    elseif (card:GetCardName() == "DEVASTATION_TIDE" or card:GetCardName() == "TEMPORAL_MASTERY" or card:GetCardName() == "VANISHMENT") and EffectController():CanAfford("{U}") == 0 then
+      ObjectDC():Set_Int( 1, 1 )
+    end
+    </RESOLUTION_TIME_ACTION>
+  </TRIGGERED_ABILITY>
+  <TRIGGERED_ABILITY internal="1" filter_zone="ZONE_IN_PLAY">
+    <TRIGGER value="END_OF_STEP" simple_qualifier="controller">
+    return (EffectController():IsAI() ~= 0) and (ObjectDC():Get_Int( 1 ) ~= 0)
+    </TRIGGER>
+    <RESOLUTION_TIME_ACTION>
+    ObjectDC():Set_Int( 1, 0 )
+    </RESOLUTION_TIME_ACTION>
+  </TRIGGERED_ABILITY>
+  <STATIC_ABILITY filter_zone="ZONE_IN_PLAY">
+    <CONTINUOUS_ACTION layer="8">
+    Object():GetCurrentCharacteristics():Characteristic_Set( CHARACTERISTIC_CANT_USE_ACTIVATED_ABILITIES, 0 )
+    </CONTINUOUS_ACTION>
+    <CONTINUOUS_ACTION layer="6">
+    local colour = ObjectDC():Get_Int( 1 ) + 1
+    if colour ~= 0 then
+      local characteristics = Object():GetCurrentCharacteristics()  
+    	characteristics:GrantAbility(colour)
+    end
+    </CONTINUOUS_ACTION>
+  </STATIC_ABILITY>
+  <MANA_ABILITY resource_id="1" filter_zone="ZONE_IN_PLAY">
+    <PRODUCES amount="{W}" />
+  </MANA_ABILITY>
+  <MANA_ABILITY resource_id="2" filter_zone="ZONE_IN_PLAY">
+    <PRODUCES amount="{U}" />
+  </MANA_ABILITY>
+  <ACTIVATED_ABILITY forced_skip="1" filter_zone="ZONE_IN_PLAY">
+    <COST type="TapSelf" />
+    <AVAILABILITY> 
+    return (EffectController():IsAI() ~= 0 and 
+    MTG():GetStep() ~= STEP_DECLARE_ATTACKERS and 
+    MTG():GetStep() ~= STEP_COMBAT_DAMAGE)
+		</AVAILABILITY>
+    <RESOLUTION_TIME_ACTION>
+    local token_count = 1
+    if token_count &gt; 0 then
+    	MTG():PutTokensIntoPlay( "_TOKEN_U_624995", token_count, EffectController() )
+    end
+    </RESOLUTION_TIME_ACTION>
+    <AI_AVAILABILITY type="in_response" />
+    <AI_AVAILABILITY step="main_1" turn="my_turn" />
+    <AI_AVAILABILITY step="main_2" turn="my_turn" />
+    <AI_AVAILABILITY step="declare_blockers" />
+    <AI_AVAILABILITY step="end_of_turn" turn="their_turn" />
+  </ACTIVATED_ABILITY>
+  <TOKEN_REGISTRATION reservation="1" type="_TOKEN_U_624995" />
+</CARD_V2>

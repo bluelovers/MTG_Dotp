@@ -1,0 +1,102 @@
+<?xml version='1.0'?>
+<CARD_V2>
+  <FILENAME text="CLOUDPOST_284524" />
+  <CARDNAME text="CLOUDPOST" />
+  <TITLE>
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[Cloudpost]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[Guet des nuages]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[Atalaya en las nubes]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[Wolkenposten]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[Torre delle Nubi]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[雲上の座]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[클라우드포스트]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[Облачная Застава]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[Posto das Nuvens]]></LOCALISED_TEXT>
+  </TITLE>
+  <MULTIVERSEID value="284524" />
+  <ARTID value="51107" />
+  <ARTIST name="Martina Pilcerova" />
+  <CASTING_COST cost="" />
+  <FLAVOURTEXT>
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[“He watches from above. He watches from below. He watches from within.”
+—Inscription on Tel-Jilad, the Tree of Tales]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[« Il observe depuis les hauteurs. Il observe depuis les profondeurs. Il observe depuis l’intérieur. »
+—Inscription sur Tel-Jilad, l’Arbre des Récits]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[“Él observa desde lo alto. Él observa desde abajo. Él observa desde adentro.”
+—Inscripción en Tel-Jilad, el Árbol de los cuentos]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[„Er wacht von oben. Er wacht von unten. Er wacht von innen.“
+—Einkerbung im Tel-Jilad, dem Baum der Sagen]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[“Egli guarda dall’alto. Guarda da sotto. Guarda da dentro.”
+—Iscrizione su Tel-Jilad, l’Albero dei Racconti]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[「彼は上から見つめている。 彼は下から見つめている。 彼は中から見つめている。」
+—伝承の樹テル＝ジラードの碑文]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[“그는 하늘에서 우리를 감시한다. 그는 땅밑에서 우리를 감시한다. 그는 우리 속에서 우리를 감시한다.”
+—이야기의 나무 텔-질라드에 새겨진 문구]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[«Он смотрит сверху. Он смотрит снизу. Он смотрит изнутри».
+— Надпись на Тел-Джиладе, Древе Преданий]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[“Ele observa de cima. Ele observa de baixo. Ele observa de dentro.”
+— Inscrição em Tel-Jilad, a Árvore dos Contos]]></LOCALISED_TEXT>
+  </FLAVOURTEXT>
+  <TYPE metaname="Land" />
+  <SUB_TYPE metaname="Locus" order_de-DE="0" order_es-ES="0" order_fr-FR="0" order_it-IT="0" order_jp-JA="0" order_ko-KR="0" order_pt-BR="0" order_ru-RU="0" />
+  <EXPANSION value="DPG" />
+  <RARITY metaname="C" />
+  <TRIGGERED_ABILITY internal="1" filter_zone="ZONE_IN_PLAY">
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[Cloudpost enters the battlefield tapped.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[Le Guet des nuages arrive sur le champ de bataille engagé.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[La Atalaya en las nubes entra al campo de batalla girada.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[Der Wolkenposten kommt getappt ins Spiel.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[La Torre delle Nubi entra nel campo di battaglia TAPpata.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[雲上の座はタップ状態で戦場に出る。]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[클라우드포스트는 탭된 채로 전장에 들어온다.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[Облачная Застава выходит на поле битвы повернутой.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[Posto das Nuvens entra no campo de batalha virado.]]></LOCALISED_TEXT>
+    <TRIGGER value="ZONECHANGE_END" simple_qualifier="self" to_zone="ZONE_IN_PLAY" />
+    <RESOLUTION_TIME_ACTION>
+    if TriggerObject() ~= nil then
+    	TriggerObject():ComesIntoPlayTapped()  
+    end
+    </RESOLUTION_TIME_ACTION>
+  </TRIGGERED_ABILITY>
+  <STATIC_ABILITY filter_zone="ZONE_IN_PLAY">
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[{T}: Add {1} to your mana pool for each Locus on the battlefield.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[{T}: Ajoutez {1} à votre réserve pour chaque site sur le champ de bataille.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[{T}: Agrega {1} a tu reserva de maná por cada Sitio en el campo de batalla.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[{T}: Erhöhe deinen Manavorrat für jeden Ort im Spiel um {1}.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[{T}: Aggiungi {1} alla tua riserva di mana per ogni Luogo sul campo di battaglia.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[{T}：あなたがコントロールする神座１つにつき、あなたのマナ・プールに{1}を加える。]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[{T}: 전장에 있는 궤적 한 개당 당신의 마나풀에 {1}를 추가한다.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[{T}: добавьте {1} в ваше хранилище маны за каждое Место на поле битвы.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[{T}: Adicione {1} à sua reserva de mana para cada Local no campo de batalha.]]></LOCALISED_TEXT>
+    <CONTINUOUS_ACTION layer="6">
+    local characteristics = Object():GetCurrentCharacteristics()
+    local filter = Object():GetFilter()
+    local loci_count
+    filter:Clear()
+    filter:AddSubType(LAND_TYPE_LOCUS)
+    filter:SetZone(ZONE_IN_PLAY)
+    loci_count = filter:Count()
+    if loci_count ~= 0 then
+    	characteristics:GrantAbility(loci_count)
+    end
+    </CONTINUOUS_ACTION>
+  </STATIC_ABILITY>
+  <MANA_ABILITY resource_id="2" filter_zone="ZONE_IN_PLAY">
+    <PRODUCES amount="{2}" />
+  </MANA_ABILITY>
+  <MANA_ABILITY resource_id="1" filter_zone="ZONE_IN_PLAY">
+    <PRODUCES amount="{1}" />
+  </MANA_ABILITY>
+  <MANA_ABILITY resource_id="3" filter_zone="ZONE_IN_PLAY">
+    <PRODUCES amount="{3}" />
+  </MANA_ABILITY>
+  <MANA_ABILITY resource_id="4" filter_zone="ZONE_IN_PLAY">
+    <PRODUCES amount="{4}" />
+  </MANA_ABILITY>
+  <MANA_ABILITY resource_id="5" filter_zone="ZONE_IN_PLAY">
+    <PRODUCES amount="{5}" />
+  </MANA_ABILITY>
+  <MANA_ABILITY auto_skip="1" resource_id="6" filter_zone="ZONE_IN_PLAY">
+    <PRODUCES amount="{6}" />
+  </MANA_ABILITY>
+</CARD_V2>

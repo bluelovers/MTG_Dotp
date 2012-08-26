@@ -1,0 +1,59 @@
+﻿<?xml version='1.0'?>
+<CARD_V2>
+  <FILENAME text="SEAT_OF_THE_SYNOD_888222740" />
+  <CARDNAME text="SEAT_OF_THE_SYNOD" />
+  <TITLE>
+     <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[Seat of the Synod]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[Seat of the Synod]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[Seat of the Synod]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[Seat of the Synod]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[Seat of the Synod]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[Seat of the Synod]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[Seat of the Synod]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[Seat of the Synod]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[Seat of the Synod]]></LOCALISED_TEXT>
+  </TITLE>
+  <MULTIVERSEID value="888222740" />
+  <ARTID value="888222740" />
+  <ARTIST name="John Avon" />
+  <CASTING_COST cost="" />
+  <FLAVOURTEXT>
+     <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[Lumengrid, site of the Knowledge Pool, source of vedalken arcana.]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[Lumengrid, site of the Knowledge Pool, source of vedalken arcana.]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[Lumengrid, site of the Knowledge Pool, source of vedalken arcana.]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[Lumengrid, site of the Knowledge Pool, source of vedalken arcana.]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[Lumengrid, site of the Knowledge Pool, source of vedalken arcana.]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[Lumengrid, site of the Knowledge Pool, source of vedalken arcana.]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[Lumengrid, site of the Knowledge Pool, source of vedalken arcana.]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[Lumengrid, site of the Knowledge Pool, source of vedalken arcana.]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[Lumengrid, site of the Knowledge Pool, source of vedalken arcana.]]></LOCALISED_TEXT>
+  </FLAVOURTEXT>
+  <TYPE metaname="Artifact" />
+  <TYPE metaname="Land" />
+  <EXPANSION value="DPG" />
+  <RARITY metaname="C" />
+  <UTILITY_ABILITY>
+     <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[|(Seat of the Synod isn’t a spell.)|]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[|(Seat of the Synod isn’t a spell.)|]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[|(Seat of the Synod isn’t a spell.)|]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[|(Seat of the Synod isn’t a spell.)|]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[|(Seat of the Synod isn’t a spell.)|]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[|(Seat of the Synod isn’t a spell.)|]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[|(Seat of the Synod isn’t a spell.)|]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[|(Seat of the Synod isn’t a spell.)|]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[|(Seat of the Synod isn’t a spell.)|]]></LOCALISED_TEXT>
+  </UTILITY_ABILITY>
+  <MANA_ABILITY>
+     <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[{T}: Add {U} to your mana pool.]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[{T}: Add {U} to your mana pool.]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[{T}: Add {U} to your mana pool.]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[{T}: Add {U} to your mana pool.]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[{T}: Add {U} to your mana pool.]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[{T}: Add {U} to your mana pool.]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[{T}: Add {U} to your mana pool.]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[{T}: Add {U} to your mana pool.]]></LOCALISED_TEXT>
+     <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[{T}: Add {U} to your mana pool.]]></LOCALISED_TEXT>
+    <COST type="TapSelf" />
+    <PRODUCES amount="{U}" />
+  </MANA_ABILITY>
+</CARD_V2>

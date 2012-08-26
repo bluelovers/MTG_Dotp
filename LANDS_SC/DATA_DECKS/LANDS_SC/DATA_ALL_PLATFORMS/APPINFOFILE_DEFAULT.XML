@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<ApplicationInfo Revision="1.0001">
+  <DataPaths>
+    <DataPath Priority="5">Data_Decks/LANDS_SC</DataPath>
+  </DataPaths>
+  <TexturePaths />
+  <MaterialPaths />
+</ApplicationInfo>

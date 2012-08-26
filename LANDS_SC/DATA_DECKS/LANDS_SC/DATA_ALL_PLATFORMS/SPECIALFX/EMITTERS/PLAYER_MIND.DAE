@@ -1,0 +1,1049 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>Beelzebub COLLADA Exporter (using FCollada version 3.05B)</authoring_tool>
+    </contributor>
+    <created>2011-10-07T14:50:33Z</created>
+    <modified>2011-10-07T14:50:33Z</modified>
+    <unit meter="1" name="meter"/>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="Image" name="C__DEV_D13_EFFECTS_CASTER_BODY_bug">
+      <init_from>file:///C:/DEV/D13/EFFECTS/CASTER_BODY/bug.img</init_from>
+    </image>
+    <image id="Image1" name="C__DEV_D13_EFFECTS_CASTER_BODY_sfx_flame">
+      <init_from>file:///C:/DEV/D13/EFFECTS/CASTER_BODY/sfx_flame.img</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="sfx_plasma" name="sfx_plasma">
+      <instance_effect url="#sfx_plasma-fx"/>
+    </material>
+    <material id="sfx_flame" name="sfx_flame">
+      <instance_effect url="#sfx_flame-fx"/>
+    </material>
+    <material id="Loaded_Particle_2_Material" name="Loaded_Particle_2_Material">
+      <instance_effect url="#Loaded_Particle_2_Material-fx"/>
+    </material>
+    <material id="Loaded_Particle_2_Material1" name="Loaded_Particle_2_Material">
+      <instance_effect url="#Loaded_Particle_2_Material1-fx"/>
+    </material>
+    <material id="Loaded_Particle_2_Material2" name="Loaded_Particle_2_Material">
+      <instance_effect url="#Loaded_Particle_2_Material2-fx"/>
+    </material>
+    <material id="Loaded_Particle_2_Material3" name="Loaded_Particle_2_Material">
+      <instance_effect url="#Loaded_Particle_2_Material3-fx"/>
+    </material>
+    <material id="Loaded_Particle_2_Material4" name="Loaded_Particle_2_Material">
+      <instance_effect url="#Loaded_Particle_2_Material4-fx"/>
+    </material>
+    <material id="Loaded_Particle_2_Material5" name="Loaded_Particle_2_Material">
+      <instance_effect url="#Loaded_Particle_2_Material5-fx"/>
+    </material>
+    <material id="Loaded_Particle_2_Material6" name="Loaded_Particle_2_Material">
+      <instance_effect url="#Loaded_Particle_2_Material6-fx"/>
+    </material>
+    <material id="Loaded_Particle_2_Material7" name="Loaded_Particle_2_Material">
+      <instance_effect url="#Loaded_Particle_2_Material7-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="sfx_plasma-fx" name="sfx_plasma">
+      <profile_COMMON>
+        <newparam sid="Image-surface">
+          <surface type="2D">
+            <init_from>Image</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="Image-sampler">
+          <sampler2D>
+            <source>Image-surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.5 0.5 0.5 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Image-sampler" texcoord="TEXCOORD1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>0</float>
+            </shininess>
+            <transparent opaque="A_ONE">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="FCOLLADA"/>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="Acolyte">
+          <BZMaterial>
+            <Flags>169279553</Flags>
+          </BZMaterial>
+          <layer layerNum="0">
+            <TextureID>Image</TextureID>
+            <Alpha>1</Alpha>
+            <ScrollSpeedU>0</ScrollSpeedU>
+            <ScrollSpeedV>0</ScrollSpeedV>
+            <SpecialFX>0</SpecialFX>
+            <BlendMode>3</BlendMode>
+            <MappingModeU>1</MappingModeU>
+            <MappingModeV>1</MappingModeV>
+            <Type>0</Type>
+            <FramesInX>4</FramesInX>
+            <FramesInY>4</FramesInY>
+            <UVSlot>0</UVSlot>
+            <Flags>0</Flags>
+          </layer>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="sfx_flame-fx" name="sfx_flame">
+      <profile_COMMON>
+        <newparam sid="Image1-surface">
+          <surface type="2D">
+            <init_from>Image1</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="Image1-sampler">
+          <sampler2D>
+            <source>Image1-surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.5 0.5 0.5 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Image1-sampler" texcoord="TEXCOORD1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>0</float>
+            </shininess>
+            <transparent opaque="A_ONE">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="FCOLLADA"/>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="Acolyte">
+          <BZMaterial>
+            <Flags>169091137</Flags>
+          </BZMaterial>
+          <layer layerNum="0">
+            <TextureID>Image1</TextureID>
+            <Alpha>0.244094</Alpha>
+            <ScrollSpeedU>0</ScrollSpeedU>
+            <ScrollSpeedV>0</ScrollSpeedV>
+            <SpecialFX>0</SpecialFX>
+            <BlendMode>1</BlendMode>
+            <MappingModeU>1</MappingModeU>
+            <MappingModeV>1</MappingModeV>
+            <Type>0</Type>
+            <FramesInX>8</FramesInX>
+            <FramesInY>8</FramesInY>
+            <UVSlot>0</UVSlot>
+            <Flags>8</Flags>
+          </layer>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Loaded_Particle_2_Material-fx" name="Loaded_Particle_2_Material">
+      <profile_COMMON>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.5 0.5 0.5 1</color>
+            </ambient>
+            <diffuse>
+              <color>1 1 1 1</color>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>0</float>
+            </shininess>
+            <transparent opaque="A_ONE">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="FCOLLADA"/>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="Acolyte">
+          <BZMaterial>
+            <Flags>134217860</Flags>
+          </BZMaterial>
+          <layer layerNum="0">
+            <Alpha>1</Alpha>
+            <ScrollSpeedU>0</ScrollSpeedU>
+            <ScrollSpeedV>0</ScrollSpeedV>
+            <SpecialFX>0</SpecialFX>
+            <BlendMode>0</BlendMode>
+            <MappingModeU>1</MappingModeU>
+            <MappingModeV>1</MappingModeV>
+            <Type>0</Type>
+            <FramesInX>0</FramesInX>
+            <FramesInY>0</FramesInY>
+            <UVSlot>0</UVSlot>
+            <Flags>128</Flags>
+          </layer>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Loaded_Particle_2_Material1-fx" name="Loaded_Particle_2_Material1">
+      <profile_COMMON>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.5 0.5 0.5 1</color>
+            </ambient>
+            <diffuse>
+              <color>1 1 1 1</color>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>0</float>
+            </shininess>
+            <transparent opaque="A_ONE">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="FCOLLADA"/>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="Acolyte">
+          <BZMaterial>
+            <Flags>134217860</Flags>
+          </BZMaterial>
+          <layer layerNum="0">
+            <Alpha>1</Alpha>
+            <ScrollSpeedU>0</ScrollSpeedU>
+            <ScrollSpeedV>0</ScrollSpeedV>
+            <SpecialFX>0</SpecialFX>
+            <BlendMode>0</BlendMode>
+            <MappingModeU>1</MappingModeU>
+            <MappingModeV>1</MappingModeV>
+            <Type>0</Type>
+            <FramesInX>0</FramesInX>
+            <FramesInY>0</FramesInY>
+            <UVSlot>0</UVSlot>
+            <Flags>128</Flags>
+          </layer>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Loaded_Particle_2_Material2-fx" name="Loaded_Particle_2_Material2">
+      <profile_COMMON>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.5 0.5 0.5 1</color>
+            </ambient>
+            <diffuse>
+              <color>1 1 1 1</color>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>0</float>
+            </shininess>
+            <transparent opaque="A_ONE">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="FCOLLADA"/>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="Acolyte">
+          <BZMaterial>
+            <Flags>134217860</Flags>
+          </BZMaterial>
+          <layer layerNum="0">
+            <Alpha>1</Alpha>
+            <ScrollSpeedU>0</ScrollSpeedU>
+            <ScrollSpeedV>0</ScrollSpeedV>
+            <SpecialFX>0</SpecialFX>
+            <BlendMode>0</BlendMode>
+            <MappingModeU>1</MappingModeU>
+            <MappingModeV>1</MappingModeV>
+            <Type>0</Type>
+            <FramesInX>0</FramesInX>
+            <FramesInY>0</FramesInY>
+            <UVSlot>0</UVSlot>
+            <Flags>128</Flags>
+          </layer>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Loaded_Particle_2_Material3-fx" name="Loaded_Particle_2_Material3">
+      <profile_COMMON>
+        <newparam sid="Image-surface">
+          <surface type="2D">
+            <init_from>Image</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="Image-sampler">
+          <sampler2D>
+            <source>Image-surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.5 0.5 0.5 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Image-sampler" texcoord="TEXCOORD1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>0</float>
+            </shininess>
+            <transparent opaque="A_ONE">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="FCOLLADA"/>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="Acolyte">
+          <BZMaterial>
+            <Flags>134217860</Flags>
+          </BZMaterial>
+          <layer layerNum="0">
+            <TextureID>Image</TextureID>
+            <Alpha>1</Alpha>
+            <ScrollSpeedU>0</ScrollSpeedU>
+            <ScrollSpeedV>0</ScrollSpeedV>
+            <SpecialFX>0</SpecialFX>
+            <BlendMode>1</BlendMode>
+            <MappingModeU>1</MappingModeU>
+            <MappingModeV>1</MappingModeV>
+            <Type>0</Type>
+            <FramesInX>0</FramesInX>
+            <FramesInY>0</FramesInY>
+            <UVSlot>0</UVSlot>
+            <Flags>128</Flags>
+          </layer>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Loaded_Particle_2_Material4-fx" name="Loaded_Particle_2_Material4">
+      <profile_COMMON>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.5 0.5 0.5 1</color>
+            </ambient>
+            <diffuse>
+              <color>1 1 1 1</color>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>0</float>
+            </shininess>
+            <transparent opaque="A_ONE">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="FCOLLADA"/>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="Acolyte">
+          <BZMaterial>
+            <Flags>134217860</Flags>
+          </BZMaterial>
+          <layer layerNum="0">
+            <Alpha>1</Alpha>
+            <ScrollSpeedU>0</ScrollSpeedU>
+            <ScrollSpeedV>0</ScrollSpeedV>
+            <SpecialFX>0</SpecialFX>
+            <BlendMode>0</BlendMode>
+            <MappingModeU>1</MappingModeU>
+            <MappingModeV>1</MappingModeV>
+            <Type>0</Type>
+            <FramesInX>0</FramesInX>
+            <FramesInY>0</FramesInY>
+            <UVSlot>0</UVSlot>
+            <Flags>128</Flags>
+          </layer>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Loaded_Particle_2_Material5-fx" name="Loaded_Particle_2_Material5">
+      <profile_COMMON>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.5 0.5 0.5 1</color>
+            </ambient>
+            <diffuse>
+              <color>1 1 1 1</color>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>0</float>
+            </shininess>
+            <transparent opaque="A_ONE">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="FCOLLADA"/>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="Acolyte">
+          <BZMaterial>
+            <Flags>134217860</Flags>
+          </BZMaterial>
+          <layer layerNum="0">
+            <Alpha>1</Alpha>
+            <ScrollSpeedU>0</ScrollSpeedU>
+            <ScrollSpeedV>0</ScrollSpeedV>
+            <SpecialFX>0</SpecialFX>
+            <BlendMode>0</BlendMode>
+            <MappingModeU>1</MappingModeU>
+            <MappingModeV>1</MappingModeV>
+            <Type>0</Type>
+            <FramesInX>0</FramesInX>
+            <FramesInY>0</FramesInY>
+            <UVSlot>0</UVSlot>
+            <Flags>128</Flags>
+          </layer>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Loaded_Particle_2_Material6-fx" name="Loaded_Particle_2_Material6">
+      <profile_COMMON>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.5 0.5 0.5 1</color>
+            </ambient>
+            <diffuse>
+              <color>1 1 1 1</color>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>0</float>
+            </shininess>
+            <transparent opaque="A_ONE">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="FCOLLADA"/>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="Acolyte">
+          <BZMaterial>
+            <Flags>134217860</Flags>
+          </BZMaterial>
+          <layer layerNum="0">
+            <Alpha>1</Alpha>
+            <ScrollSpeedU>0</ScrollSpeedU>
+            <ScrollSpeedV>0</ScrollSpeedV>
+            <SpecialFX>0</SpecialFX>
+            <BlendMode>0</BlendMode>
+            <MappingModeU>1</MappingModeU>
+            <MappingModeV>1</MappingModeV>
+            <Type>0</Type>
+            <FramesInX>0</FramesInX>
+            <FramesInY>0</FramesInY>
+            <UVSlot>0</UVSlot>
+            <Flags>128</Flags>
+          </layer>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Loaded_Particle_2_Material7-fx" name="Loaded_Particle_2_Material7">
+      <profile_COMMON>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.5 0.5 0.5 1</color>
+            </ambient>
+            <diffuse>
+              <color>1 1 1 1</color>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>0</float>
+            </shininess>
+            <transparent opaque="A_ONE">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="FCOLLADA"/>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="Acolyte">
+          <BZMaterial>
+            <Flags>134217860</Flags>
+          </BZMaterial>
+          <layer layerNum="0">
+            <Alpha>1</Alpha>
+            <ScrollSpeedU>0</ScrollSpeedU>
+            <ScrollSpeedV>0</ScrollSpeedV>
+            <SpecialFX>0</SpecialFX>
+            <BlendMode>0</BlendMode>
+            <MappingModeU>1</MappingModeU>
+            <MappingModeV>1</MappingModeV>
+            <Type>0</Type>
+            <FramesInX>0</FramesInX>
+            <FramesInY>0</FramesInY>
+            <UVSlot>0</UVSlot>
+            <Flags>128</Flags>
+          </layer>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="sfx_plasma-mesh" name="sfx_plasma">
+      <mesh>
+        <source id="sfx_plasma-mesh-positions">
+          <float_array id="sfx_plasma-mesh-positions-array" count="12">-0.05 0.00152 0.05 0.05 0.00126 0.05 -0.05 0.00126 -0.05 0.05 0.00152 -0.05</float_array>
+          <technique_common>
+            <accessor source="#sfx_plasma-mesh-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="sfx_plasma-mesh-normals">
+          <float_array id="sfx_plasma-mesh-normals-array" count="18">-0.002599 0.999993 -0.002599 0 1 0 0 1 0 0.002599 0.999993 0.002599 0 1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#sfx_plasma-mesh-normals-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="sfx_plasma-mesh-map-channel0">
+          <float_array id="sfx_plasma-mesh-map-channel0-array" count="18">1 1 0 1 0 0 0 1 0 0 0 0 0 1 0 1 0 0</float_array>
+          <technique_common>
+            <accessor source="#sfx_plasma-mesh-map-channel0-array" count="6" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="sfx_plasma-mesh-colour">
+          <float_array id="sfx_plasma-mesh-colour-array" count="18">0.501961 0.501961 0.501961 0.501961 0.501961 0.501961 0.501961 0.501961 0.501961 0.501961 0.501961 0.501961 0.501961 0.501961 0.501961 0.501961 0.501961 0.501961</float_array>
+          <technique_common>
+            <accessor source="#sfx_plasma-mesh-colour-array" count="6" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="sfx_plasma-mesh-maxalpha">
+          <float_array id="sfx_plasma-mesh-maxalpha-array" count="18">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#sfx_plasma-mesh-maxalpha-array" count="6" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="sfx_plasma-mesh-vertices">
+          <input semantic="POSITION" source="#sfx_plasma-mesh-positions"/>
+        </vertices>
+        <triangles material="mat0" count="2">
+          <input semantic="VERTEX" source="#sfx_plasma-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#sfx_plasma-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#sfx_plasma-mesh-map-channel0" offset="1"/>
+          <input semantic="COLOR" source="#sfx_plasma-mesh-colour" offset="1"/>
+          <input semantic="COLOR" source="#sfx_plasma-mesh-maxalpha" offset="1" set="102"/>
+          <p>2 0 0 2 3 1 1 3 3 5 0 4</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="flame10-00-mesh" name="flame10-00">
+      <mesh>
+        <source id="flame10-00-mesh-positions">
+          <float_array id="flame10-00-mesh-positions-array" count="12">1.35299 -0.75187 0 -1.36053 -0.75187 -0.001582 1.35299 1.96164 -0.001582 -1.36052 1.96164 0</float_array>
+          <technique_common>
+            <accessor source="#flame10-00-mesh-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="flame10-00-mesh-normals">
+          <float_array id="flame10-00-mesh-normals-array" count="18">-0.000583 -0.000583 -1 0 0 -1 0 0 -1 0.000583 0.000583 -1 0 0 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#flame10-00-mesh-normals-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="flame10-00-mesh-map-channel0">
+          <float_array id="flame10-00-mesh-map-channel0-array" count="18">0 1 0 1 1 0 0 0 0 1 0 0 0 0 0 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#flame10-00-mesh-map-channel0-array" count="6" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="flame10-00-mesh-colour">
+          <float_array id="flame10-00-mesh-colour-array" count="18">0 0 0.12549 0 0 0.12549 1 0.776471 0.666667 1 0.776471 0.666667 1 0.776471 0.666667 0 0 0.12549</float_array>
+          <technique_common>
+            <accessor source="#flame10-00-mesh-colour-array" count="6" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="flame10-00-mesh-maxalpha">
+          <float_array id="flame10-00-mesh-maxalpha-array" count="18">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#flame10-00-mesh-maxalpha-array" count="6" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="flame10-00-mesh-vertices">
+          <input semantic="POSITION" source="#flame10-00-mesh-positions"/>
+        </vertices>
+        <triangles material="mat0" count="2">
+          <input semantic="VERTEX" source="#flame10-00-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#flame10-00-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#flame10-00-mesh-map-channel0" offset="1"/>
+          <input semantic="COLOR" source="#flame10-00-mesh-colour" offset="1"/>
+          <input semantic="COLOR" source="#flame10-00-mesh-maxalpha" offset="1" set="102"/>
+          <p>2 0 0 2 3 1 1 3 3 5 0 4</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="flame10-16-mesh" name="flame10-16">
+      <mesh>
+        <source id="flame10-16-mesh-positions">
+          <float_array id="flame10-16-mesh-positions-array" count="12">1.21769 -0.676683 -0.002713 -1.22447 -0.676682 -0.002781 1.21769 1.76548 -0.002781 -1.22447 1.76548 -0.002713</float_array>
+          <technique_common>
+            <accessor source="#flame10-16-mesh-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="flame10-16-mesh-normals">
+          <float_array id="flame10-16-mesh-normals-array" count="18">-0.000027 -0.000027 -1 0 0 -1 0 0 -1 0.000027 0.000027 -1 0 0 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#flame10-16-mesh-normals-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="flame10-16-mesh-map-channel0">
+          <float_array id="flame10-16-mesh-map-channel0-array" count="18">0 -1 0 1 -1 0 0 -2 0 1 -2 0 0 -2 0 1 -1 0</float_array>
+          <technique_common>
+            <accessor source="#flame10-16-mesh-map-channel0-array" count="6" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="flame10-16-mesh-colour">
+          <float_array id="flame10-16-mesh-colour-array" count="18">0 0 0.12549 0 0 0.12549 1 0.776471 0.666667 1 0.776471 0.666667 1 0.776471 0.666667 0 0 0.12549</float_array>
+          <technique_common>
+            <accessor source="#flame10-16-mesh-colour-array" count="6" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="flame10-16-mesh-maxalpha">
+          <float_array id="flame10-16-mesh-maxalpha-array" count="18">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#flame10-16-mesh-maxalpha-array" count="6" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="flame10-16-mesh-vertices">
+          <input semantic="POSITION" source="#flame10-16-mesh-positions"/>
+        </vertices>
+        <triangles material="mat0" count="2">
+          <input semantic="VERTEX" source="#flame10-16-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#flame10-16-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#flame10-16-mesh-map-channel0" offset="1"/>
+          <input semantic="COLOR" source="#flame10-16-mesh-colour" offset="1"/>
+          <input semantic="COLOR" source="#flame10-16-mesh-maxalpha" offset="1" set="102"/>
+          <p>2 0 0 2 3 1 1 3 3 5 0 4</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="flame10-32-mesh" name="flame10-32">
+      <mesh>
+        <source id="flame10-32-mesh-positions">
+          <float_array id="flame10-32-mesh-positions-array" count="12">1.09592 -0.609015 -0.00061 -1.10203 -0.609015 -0.001587 1.09592 1.58893 -0.001587 -1.10203 1.58893 -0.00061</float_array>
+          <technique_common>
+            <accessor source="#flame10-32-mesh-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="flame10-32-mesh-normals">
+          <float_array id="flame10-32-mesh-normals-array" count="18">-0.000444 -0.000444 -1 0 0 -1 0 0 -1 0.000444 0.000444 -1 0 0 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#flame10-32-mesh-normals-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="flame10-32-mesh-map-channel0">
+          <float_array id="flame10-32-mesh-map-channel0-array" count="18">0 -3 0 1 -3 0 0 -4 0 1 -4 0 0 -4 0 1 -3 0</float_array>
+          <technique_common>
+            <accessor source="#flame10-32-mesh-map-channel0-array" count="6" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="flame10-32-mesh-colour">
+          <float_array id="flame10-32-mesh-colour-array" count="18">0 0 0.12549 0 0 0.12549 1 0.776471 0.666667 1 0.776471 0.666667 1 0.776471 0.666667 0 0 0.12549</float_array>
+          <technique_common>
+            <accessor source="#flame10-32-mesh-colour-array" count="6" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="flame10-32-mesh-maxalpha">
+          <float_array id="flame10-32-mesh-maxalpha-array" count="18">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#flame10-32-mesh-maxalpha-array" count="6" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="flame10-32-mesh-vertices">
+          <input semantic="POSITION" source="#flame10-32-mesh-positions"/>
+        </vertices>
+        <triangles material="mat0" count="2">
+          <input semantic="VERTEX" source="#flame10-32-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#flame10-32-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#flame10-32-mesh-map-channel0" offset="1"/>
+          <input semantic="COLOR" source="#flame10-32-mesh-colour" offset="1"/>
+          <input semantic="COLOR" source="#flame10-32-mesh-maxalpha" offset="1" set="102"/>
+          <p>2 0 0 2 3 1 1 3 3 5 0 4</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="flame10-48-mesh" name="flame10-48">
+      <mesh>
+        <source id="flame10-48-mesh-positions">
+          <float_array id="flame10-48-mesh-positions-array" count="12">0.986329 -0.548113 -0.000549 -0.991824 -0.548113 -0.001428 0.98633 1.43004 -0.001428 -0.991823 1.43004 -0.000549</float_array>
+          <technique_common>
+            <accessor source="#flame10-48-mesh-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="flame10-48-mesh-normals">
+          <float_array id="flame10-48-mesh-normals-array" count="18">-0.000444 -0.000444 -1 0 0 -1 0 0 -1 0.000444 0.000444 -1 0 0 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#flame10-48-mesh-normals-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="flame10-48-mesh-map-channel0">
+          <float_array id="flame10-48-mesh-map-channel0-array" count="18">0 -5 0 1 -5 0 0 -6 0 1 -6 0 0 -6 0 1 -5 0</float_array>
+          <technique_common>
+            <accessor source="#flame10-48-mesh-map-channel0-array" count="6" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="flame10-48-mesh-colour">
+          <float_array id="flame10-48-mesh-colour-array" count="18">0 0 0.12549 0 0 0.12549 1 0.776471 0.666667 1 0.776471 0.666667 1 0.776471 0.666667 0 0 0.12549</float_array>
+          <technique_common>
+            <accessor source="#flame10-48-mesh-colour-array" count="6" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="flame10-48-mesh-maxalpha">
+          <float_array id="flame10-48-mesh-maxalpha-array" count="18">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#flame10-48-mesh-maxalpha-array" count="6" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="flame10-48-mesh-vertices">
+          <input semantic="POSITION" source="#flame10-48-mesh-positions"/>
+        </vertices>
+        <triangles material="mat0" count="2">
+          <input semantic="VERTEX" source="#flame10-48-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#flame10-48-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#flame10-48-mesh-map-channel0" offset="1"/>
+          <input semantic="COLOR" source="#flame10-48-mesh-colour" offset="1"/>
+          <input semantic="COLOR" source="#flame10-48-mesh-maxalpha" offset="1" set="102"/>
+          <p>2 0 0 2 3 1 1 3 3 5 0 4</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="VisualSceneNode">
+      <node id="VisualSceneNode1" type="NODE">
+        <matrix>1 0 0 0 0 1 0 -1.90596 0 0 1 0 0 0 0 1</matrix>
+        <node id="VisualSceneNode2" type="NODE">
+          <matrix>1 0 0 -0.000000 0 1 0 2.21 0 0 1 0 0 0 0 1</matrix>
+          <node id="sfx_plasma1" name="sfx_plasma" type="NODE">
+            <instance_geometry url="#sfx_plasma-mesh">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="mat0" target="#sfx_plasma">
+                    <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+                  </instance_material>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+          </node>
+        </node>
+      </node>
+      <node id="VisualSceneNode3" type="NODE">
+        <matrix>1 0 0 0 0 1 0 0.5 0 0 1 -0.547448 0 0 0 1</matrix>
+      </node>
+      <node id="VisualSceneNode4" type="NODE">
+        <matrix>1 0 0 0 0 1 0 0.5 0 0 1 -0.696977 0 0 0 1</matrix>
+        <node id="flame10-00" name="flame10-00" type="NODE">
+          <matrix>1 0 0 0 0 1 0 -1 0 0 1 0 0 0 0 1</matrix>
+          <instance_geometry url="#flame10-00-mesh">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="mat0" target="#sfx_flame">
+                  <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+      </node>
+      <node id="VisualSceneNode5" type="NODE">
+        <matrix>1 0 0 0 0 1 0 0.5 0 0 1 -0.696977 0 0 0 1</matrix>
+        <node id="flame10-16" name="flame10-16" type="NODE">
+          <matrix>1 0 0 0 0 1 0 -1 0 0 1 0 0 0 0 1</matrix>
+          <instance_geometry url="#flame10-16-mesh">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="mat0" target="#sfx_flame">
+                  <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+      </node>
+      <node id="VisualSceneNode6" type="NODE">
+        <matrix>1 0 0 0 0 1 0 0.5 0 0 1 -0.696977 0 0 0 1</matrix>
+        <node id="flame10-32" name="flame10-32" type="NODE">
+          <matrix>1 0 0 0 0 1 0 -1 0 0 1 0 0 0 0 1</matrix>
+          <instance_geometry url="#flame10-32-mesh">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="mat0" target="#sfx_flame">
+                  <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+      </node>
+      <node id="VisualSceneNode7" type="NODE">
+        <matrix>1 0 0 0 0 1 0 0.5 0 0 1 -0.696977 0 0 0 1</matrix>
+        <node id="flame10-48" name="flame10-48" type="NODE">
+          <matrix>1 0 0 0 0 1 0 -1 0 0 1 0 0 0 0 1</matrix>
+          <instance_geometry url="#flame10-48-mesh">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="mat0" target="#sfx_flame">
+                  <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#VisualSceneNode"/>
+  </scene>
+</COLLADA>

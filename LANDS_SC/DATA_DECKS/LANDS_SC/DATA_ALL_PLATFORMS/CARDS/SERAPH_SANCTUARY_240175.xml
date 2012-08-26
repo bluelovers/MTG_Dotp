@@ -1,0 +1,75 @@
+﻿<?xml version='1.0'?>
+<CARD_V2>
+  <FILENAME text="SERAPH_SANCTUARY_240175" />
+  <CARDNAME text="SERAPH_SANCTUARY" />
+  <TITLE>
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[Seraph Sanctuary]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[Santuario dei Serafini]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[Heiligtum der Seraphe]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[Sanctuaire des séraphins]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[Santuario de serafines]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[熾天使の聖域]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[치품천사의 성역]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[Святилище Серафимов]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[Santuário dos Serafins]]></LOCALISED_TEXT>
+  </TITLE>
+  <MULTIVERSEID value="240175" />
+  <ARTID value="A240175" />
+  <ARTIST name="David Palumbo" />
+  <CASTING_COST cost="" />
+  <TYPE metaname="Land" />
+  <EXPANSION value="AVR" />
+  <RARITY metaname="C" />
+  <TRIGGERED_ABILITY auto_skip="1" filter_zone="ZONE_IN_PLAY">
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[When Seraph Sanctuary enters the battlefield, you gain 1 life.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[Quando il Santuario dei Serafini entra nel campo di battaglia, guadagni 1 punto vita.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[Wenn das Heiligtum der Seraphe ins Spiel kommt, erhältst du 1 Lebenspunkt dazu.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[Quand le Sanctuaire des séraphins arrive sur le champ de bataille, vous gagnez 1 point de vie.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[Cuando el Santuario de serafines entre al campo de batalla, ganas 1 vida.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[熾天使の聖域が戦場に出たとき、あなたは１点のライフを得る。]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[치품천사의 성역이 전장에 들어올 때, 당신은 생명 1점을 얻는다.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[Когда Святилище Серафимов выходит на поле битвы, вы получаете 1 жизнь.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[Quando Santuário dos Serafins entra no campo de batalha, você ganha 1 ponto de vida.]]></LOCALISED_TEXT>
+    <TRIGGER value="ZONECHANGE_END" simple_qualifier="self" to_zone="ZONE_IN_PLAY" />
+    <RESOLUTION_TIME_ACTION>
+    local player = EffectController()
+    if (player ~= nil) then
+    	player:GainLife(1)
+    end
+    </RESOLUTION_TIME_ACTION>
+  </TRIGGERED_ABILITY>
+  <TRIGGERED_ABILITY auto_skip="1" filter_zone="ZONE_IN_PLAY">
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[Whenever an Angel enters the battlefield under your control, you gain 1 life.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[Ogniqualvolta un Angelo entra nel campo di battaglia sotto il tuo controllo, guadagni 1 punto vita.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[Immer wenn ein Engel unter deiner Kontrolle ins Spiel kommt, erhältst du 1 Lebenspunkt dazu.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[À chaque fois qu’un ange arrive sur le champ de bataille sous votre contrôle, vous gagnez 1 point de vie.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[Siempre que un Ángel entre al campo de batalla bajo tu control, ganas 1 vida.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[天使が１体あなたのコントロール下で戦場に出るたび、あなたは１点のライフを得る。]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[천사 지속물이 당신의 조종하에 전장에 들어올 때마다, 당신은 생명 1점을 얻는다.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[Каждый раз, когда Ангел выходит на поле битвы под вашим контролем, вы получаете 1 жизнь.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[Toda vez que um Anjo entra no campo de batalha sob o seu controle, você ganha 1 ponto de vida.]]></LOCALISED_TEXT>
+    <TRIGGER value="ZONECHANGE_END" simple_qualifier="objectyoucontrol" to_zone="ZONE_IN_PLAY">
+    return TriggerObject():GetSubType():Test( CREATURE_TYPE_ANGEL ) ~= 0
+    </TRIGGER>
+    <RESOLUTION_TIME_ACTION>
+    local player = EffectController()
+    if (player ~= nil) then
+    	player:GainLife(1)
+    end
+    </RESOLUTION_TIME_ACTION>
+  </TRIGGERED_ABILITY>
+  <MANA_ABILITY filter_zone="ZONE_IN_PLAY">
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[{T}: Ajoutez {1} à votre réserve.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[{T}: Agrega {1} a tu reserva de maná.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[{T}: Erhöhe deinen Manavorrat um {1}.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[{T}: Aggiungi {1} alla tua riserva di mana.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[{T}：あなたのマナ・プールに{1}を加える。]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[{T}: {1}를 당신의 마나풀에 담는다.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[{T}: добавьте {1} в ваше хранилище маны.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[{T}: Adicione {1} à sua reserva de mana.]]></LOCALISED_TEXT>
+    <COST type="TapSelf" />
+    <PRODUCES amount="{1}" />
+  </MANA_ABILITY>
+  <AI_BASE_SCORE score="150" zone="ZONE_IN_PLAY" />
+</CARD_V2>

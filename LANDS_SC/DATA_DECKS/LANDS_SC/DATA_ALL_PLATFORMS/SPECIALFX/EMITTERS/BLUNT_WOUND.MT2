@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<Material>
+	<Version>1.0</Version>
+	<Pass>
+		<PassDescription>A Simple Pass</PassDescription>
+		
+		<Texture Alias="Normal_Map" FileName="sfx_blunt_wound_N"/>
+		<Texture Alias="DiffuseColour" FileName="sfx_blunt_wound"/>
+
+		<Translucent Value="TRUE"/>
+
+		<BlendState>
+			<BlendMode RenderTarget="0" ColSrcOption="SRC_ALPHA" ColDestOption="INV_SRC_ALPHA" ColOperation="ADD" AlphaSrcOption="SRC_ALPHA" AlphaDestOption="INV_SRC_ALPHA" AlphaOperation="ADD" SeperateAlpha="FALSE"/>
+			<AlphaTestInfo Enabled="0" ComparisonMode="LESS"/>
+			<AlphaToCoverage Enabled="FALSE"/>
+			<BlendEnable RenderTarget="0" Enabled="TRUE"/>
+			<WriteMask RenderTarget="0" Mask="RGBA"/>
+		</BlendState>
+		<DepthStencilState>
+			<Depth WriteMask="ZERO" TestEnable="TRUE"/>
+		</DepthStencilState>
+		
+		<LightingRequirements>
+			<NeedsPerPixelDiffuseColour Value="TRUE"/>
+			<NeedsPerPixelDiffuseLighting Value="TRUE"/>
+			<NeedsPerPixelSpecularLighting Value="TRUE"/>
+			<NeedsSpecularMask Value="TRUE"/>
+			<NeedsPerPixelAmbientLighting Value="TRUE"/>
+			<ReceivesShadows Value="FALSE" />
+			<CastsShadows Value="FALSE" />
+			<NeedsAmbientLight Value="TRUE" />
+		</LightingRequirements>
+		
+		<NeedsWorldSpaceVertexNormal Value="TRUE"/>
+		<NeedsWorldVertexPos Value="TRUE"/>
+		<NeedsWorldEyePos Value="TRUE"/>
+		<NeedsWorldLightDir Value="TRUE"/>
+		<NeedsTangentFrame Value="TRUE"/>
+		<NeedsSeperateObjectColour Value="TRUE"/>
+		
+		<TextureCoordSource Alias="Tex0" UVStream="0" Scrolling="FALSE" ScrollX="0.0" ScrollY="0.0" ScrollZ="0.0" FlipBook="FALSE" FramesX="1" FramesY="1" FlipBookSelect="FALSE" FlipBookSelectFrame="0"/>
+		
+		<Sampler Alias="SAMPLER_NormalMap" Type="2D" MinFilter="LINEAR" MipFilter="LINEAR" MagFilter="LINEAR" AddressU="WRAP" AddressV="WRAP"/>
+		<Sampler Alias="SAMPLER_DiffuseColour" Type="2D" MinFilter="LINEAR" MipFilter="LINEAR" MagFilter="LINEAR" AddressU="WRAP" AddressV="WRAP"/>
+
+		<!-- There will probably be vertex\geometry shader sections in the future, so i have stuck the pixel shader stuff in its own section -->
+		<PixelShader>
+			<ManualShader>
+				<MainFunction Name="ps_main"/>
+				<ManualCode>
+					float4 ps_main(PS_IN In) : COLOR
+					{
+						float4 Out;
+						
+						_LightingInfo li = (_LightingInfo)0;
+						
+						// Set Some Default values
+						li.SpecularPower = 10.0f;
+						li.SpecularColour = float4( 2, 1, 1, 1 );
+						
+						// Fill in the Ambiant light values
+						li.AmbientLight = float4( 0.8, 0.8, 0.8, 1 );
+						
+						// Look up the normal and spcular mask
+						float4 nomal_and_spec = tex2D(SAMPLER_NormalMap, Get2DTexCoord( 0, In ));
+						li.Normal = normalize( TangentToLightingSpace( (2*nomal_and_spec.rgb)-1, In ) );
+						li.SpecularMask = nomal_and_spec.a;
+						
+						// Look up the base colour
+						float4 diffuse = tex2D(SAMPLER_DiffuseColour, Get2DTexCoord( 0, In ));
+						li.DiffuseColour = diffuse.rgb * GetObjectColour( In ).rgb;
+						
+						// Do the lighting and fog calculations
+						Out.rgb =  DoLighting( li, In );
+						Out.a = diffuse.a * GetObjectColour( In ).a;
+						return Out;
+					}
+				</ManualCode>
+			</ManualShader>
+		</PixelShader>
+	</Pass>
+</Material>

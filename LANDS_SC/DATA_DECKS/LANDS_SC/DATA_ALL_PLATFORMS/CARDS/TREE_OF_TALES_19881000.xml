@@ -8,7 +8,7 @@
     <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[Tree of Tales]]></LOCALISED_TEXT>
     <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[Tree of Tales]]></LOCALISED_TEXT>
     <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[Tree of Tales]]></LOCALISED_TEXT>
-    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[Tree of Tales]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[伝承の樹]]></LOCALISED_TEXT>
     <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[Tree of Tales]]></LOCALISED_TEXT>
     <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[Tree of Tales]]></LOCALISED_TEXT>
     <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[Tree of Tales]]></LOCALISED_TEXT>
@@ -46,7 +46,7 @@
     <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[|(Tree of Tales isn’t a spell.)|]]></LOCALISED_TEXT>
     <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[|(Tree of Tales isn’t a spell.)|]]></LOCALISED_TEXT>
     <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[|(Tree of Tales isn’t a spell.)|]]></LOCALISED_TEXT>
-    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[|(Tree of Tales isn’t a spell.)|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[|（伝承の樹は呪文でない。）|]]></LOCALISED_TEXT>
     <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[|(Tree of Tales isn’t a spell.)|]]></LOCALISED_TEXT>
     <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[|(Tree of Tales isn’t a spell.)|]]></LOCALISED_TEXT>
     <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[|(Tree of Tales isn’t a spell.)|]]></LOCALISED_TEXT>

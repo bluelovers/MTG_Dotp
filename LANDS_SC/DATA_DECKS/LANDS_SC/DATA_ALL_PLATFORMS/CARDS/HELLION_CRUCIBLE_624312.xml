@@ -1,0 +1,87 @@
+﻿<?xml version='1.0'?>
+<CARD_V2>
+  <FILENAME text="HELLION_CRUCIBLE_624312" />
+  <CARDNAME text="HELLION_CRUCIBLE" />
+  <TITLE>
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[Hellion Crucible]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[Hellion Crucible]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[Hellion Crucible]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[Hellion Crucible]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[Hellion Crucible]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[Hellion Crucible]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[Hellion Crucible]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[Hellion Crucible]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[Hellion Crucible]]></LOCALISED_TEXT>
+  </TITLE>
+  <MULTIVERSEID value="624312" />
+  <ARTID value="624312" />
+  <ARTIST name="Trevor Claxton" />
+  <CASTING_COST cost="" />
+  <TYPE metaname="Land" />
+  <EXPANSION value="DPG" />
+  <RARITY metaname="R" />
+  <MANA_ABILITY filter_zone="ZONE_IN_PLAY">
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[{T}: Add {1} to your mana pool.]]></LOCALISED_TEXT>
+    <COST type="TapSelf" />
+    <PRODUCES amount="{1}" />
+  </MANA_ABILITY>
+  <ACTIVATED_ABILITY auto_skip="1" filter_zone="ZONE_IN_PLAY">
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[{1}{R}, {T}: Put a pressure counter on Hellion Crucible.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[{1}{R}, {T}: Put a pressure counter on Hellion Crucible.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[{1}{R}, {T}: Put a pressure counter on Hellion Crucible.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[{1}{R}, {T}: Put a pressure counter on Hellion Crucible.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[{1}{R}, {T}: Put a pressure counter on Hellion Crucible.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[{1}{R}, {T}: Put a pressure counter on Hellion Crucible.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[{1}{R}, {T}: Put a pressure counter on Hellion Crucible.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[{1}{R}, {T}: Put a pressure counter on Hellion Crucible.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[{1}{R}, {T}: Put a pressure counter on Hellion Crucible.]]></LOCALISED_TEXT>
+    <COST type="Mana" cost="{1}{R}" />
+    <COST type="TapSelf" />
+    <AVAILABILITY>
+		return EffectController():CanAfford("{2}{R}") == 1
+		</AVAILABILITY>
+    <RESOLUTION_TIME_ACTION>
+    Object():AddCounters( MTG():GetCountersType("PRESSURE"), 1 ) 
+    </RESOLUTION_TIME_ACTION>
+    <AI_AVAILABILITY type="in_response" />
+    <AI_AVAILABILITY step="end_of_turn" />
+	  <AI_AVAILABILITY behaviour="MakeCreature" />
+  </ACTIVATED_ABILITY>
+  <ACTIVATED_ABILITY auto_skip="1" filter_zone="ZONE_IN_PLAY">
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[{1}{R}, {T}, Remove two pressure counters from Hellion Crucible and sacrifice it: Put a 4/4 red Hellion creature token with haste onto the battlefield. (It can attack and {T} as soon as it comes under your control.)]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[{1}{R}, {T}, Remove two pressure counters from Hellion Crucible and sacrifice it: Put a 4/4 red Hellion creature token with haste onto the battlefield. (It can attack and {T} as soon as it comes under your control.)]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[{1}{R}, {T}, Remove two pressure counters from Hellion Crucible and sacrifice it: Put a 4/4 red Hellion creature token with haste onto the battlefield. (It can attack and {T} as soon as it comes under your control.)]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[{1}{R}, {T}, Remove two pressure counters from Hellion Crucible and sacrifice it: Put a 4/4 red Hellion creature token with haste onto the battlefield. (It can attack and {T} as soon as it comes under your control.)]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[{1}{R}, {T}, Remove two pressure counters from Hellion Crucible and sacrifice it: Put a 4/4 red Hellion creature token with haste onto the battlefield. (It can attack and {T} as soon as it comes under your control.)]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[{1}{R}, {T}, Remove two pressure counters from Hellion Crucible and sacrifice it: Put a 4/4 red Hellion creature token with haste onto the battlefield. (It can attack and {T} as soon as it comes under your control.)]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[{1}{R}, {T}, Remove two pressure counters from Hellion Crucible and sacrifice it: Put a 4/4 red Hellion creature token with haste onto the battlefield. (It can attack and {T} as soon as it comes under your control.)]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[{1}{R}, {T}, Remove two pressure counters from Hellion Crucible and sacrifice it: Put a 4/4 red Hellion creature token with haste onto the battlefield. (It can attack and {T} as soon as it comes under your control.)]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[{1}{R}, {T}, Remove two pressure counters from Hellion Crucible and sacrifice it: Put a 4/4 red Hellion creature token with haste onto the battlefield. (It can attack and {T} as soon as it comes under your control.)]]></LOCALISED_TEXT>
+    <COST type="Mana" cost="{1}{R}" />
+    <COST type="TapSelf" />
+    <COST type="COUNTERSSELF" name="PRESSURE" number="-2" />
+    <COST type="SacrificeSelf" />
+    <AVAILABILITY>
+		return EffectController():CanAfford("{2}{R}") == 1
+		</AVAILABILITY>
+    <RESOLUTION_TIME_ACTION>
+    local token_count = 1
+    if token_count &gt; 0 then
+    	MTG():PutTokensIntoPlay( "TOKEN_HELLION_4_4_H_624516", token_count, EffectController() )
+    end
+    </RESOLUTION_TIME_ACTION>
+    <AI_AVAILABILITY type="in_response" />
+    <AI_AVAILABILITY step="declare_attackers" turn="their_turn" />
+    <AI_AVAILABILITY step="end_of_turn" turn="their_turn" />
+	  <AI_AVAILABILITY behaviour="MakeCreature" />
+  </ACTIVATED_ABILITY>
+  <TOKEN_REGISTRATION reservation="1" type="TOKEN_HELLION_4_4_H_624516" />
+</CARD_V2>

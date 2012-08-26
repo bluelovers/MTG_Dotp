@@ -1,4 +1,4 @@
-<?xml version='1.0'?>
+﻿<?xml version='1.0'?>
 <CARD_V2>
   <FILENAME text="TREE_OF_TALES_19881000" />
   <CARDNAME text="TREE_OF_TALES" />
@@ -40,6 +40,17 @@
   <SUPERTYPE metaname= "Artifact"/>
   <EXPANSION value="DPG" />
   <RARITY metaname="C" />
+  <UTILITY_ABILITY>
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[|(Tree of Tales isn’t a spell.)|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[|(Tree of Tales isn’t a spell.)|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[|(Tree of Tales isn’t a spell.)|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[|(Tree of Tales isn’t a spell.)|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[|(Tree of Tales isn’t a spell.)|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[|(Tree of Tales isn’t a spell.)|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[|(Tree of Tales isn’t a spell.)|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[|(Tree of Tales isn’t a spell.)|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[|(Tree of Tales isn’t a spell.)|]]></LOCALISED_TEXT>
+  </UTILITY_ABILITY>
   <MANA_ABILITY>
     <COST type="TapSelf" />
     <PRODUCES amount="{G}" />

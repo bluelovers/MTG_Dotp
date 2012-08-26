@@ -1,4 +1,4 @@
-<?xml version='1.0'?>
+﻿<?xml version='1.0'?>
 <CARD_V2>
   <FILENAME text="GREAT_FURNACE_4384" />
   <CARDNAME text="GREAT_FURNACE" />
@@ -8,7 +8,7 @@
     <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[Great Furnace]]></LOCALISED_TEXT>
     <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[Great Furnace]]></LOCALISED_TEXT>
     <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[Great Furnace]]></LOCALISED_TEXT>
-    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[Great Furnace]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[大焼炉]]></LOCALISED_TEXT>
     <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[Great Furnace]]></LOCALISED_TEXT>
     <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[Great Furnace]]></LOCALISED_TEXT>
     <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[Great Furnace]]></LOCALISED_TEXT>
@@ -16,7 +16,7 @@
   <MULTIVERSEID value="4384" />
   <ARTID value="8884384" />
   <ARTIST name="Rob Alexander" />
-  <CASTING_COST cost="{}" />
+  <CASTING_COST cost="" />
 <FLAVOURTEXT> -<LOCALISED_TEXT LanguageCode="en-US">
 <![CDATA[Kuldotha, wellspring of molten metal, temple of the goblin horde.]]>
 </LOCALISED_TEXT> -<LOCALISED_TEXT LanguageCode="fr-FR">
@@ -36,11 +36,31 @@
 </LOCALISED_TEXT> -<LOCALISED_TEXT LanguageCode="pt-BR">
 <![CDATA[Kuldotha, wellspring of molten metal, temple of the goblin horde.]]>
 </LOCALISED_TEXT> </FLAVOURTEXT>
+  <TYPE metaname="Artifact" />
   <TYPE metaname="Land" />
-  <SUPERTYPE metaname= "Artifact"/>
   <EXPANSION value="DPG" />
   <RARITY metaname="C" />
+  <UTILITY_ABILITY>
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[|(Great Furnace isn't a spell.)|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[|(Great Furnace isn't a spell.)|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[|(Great Furnace isn't a spell.)|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[|(Great Furnace isn't a spell.)|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[|(Great Furnace isn't a spell.)|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[|（大焼炉は呪文ではない。）|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[|(Great Furnace isn't a spell.)|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[|(Great Furnace isn't a spell.)|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[|(Great Furnace isn't a spell.)|]]></LOCALISED_TEXT>
+  </UTILITY_ABILITY>
   <MANA_ABILITY>
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[{T}: Add {R} to your mana pool.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[{T}: Ajoutez {R} à votre réserve.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[{T}: Agrega {R} a tu reserva de maná.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[{T}: Erhöhe deinen Manavorrat um {R}.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[{T}: Aggiungi {R} alla tua riserva di mana.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[{T}：あなたのマナ・プールに{R}を加える。]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[{T}: {R}를 당신의 마나풀에 담는다.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[{T}: добавьте {R} в ваше хранилище маны.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[{T}: Adicione {R} à sua reserva de mana.]]></LOCALISED_TEXT>
     <COST type="TapSelf" />
     <PRODUCES amount="{R}" />
   </MANA_ABILITY>

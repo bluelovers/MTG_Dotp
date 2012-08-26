@@ -1,0 +1,48 @@
+<?xml version='1.0'?>
+<CARD_V2>
+  <FILENAME text="GREAT_FURNACE_4384" />
+  <CARDNAME text="GREAT_FURNACE" />
+  <TITLE>
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[Great Furnace]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[Great Furnace]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[Great Furnace]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[Great Furnace]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[Great Furnace]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[Great Furnace]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[Great Furnace]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[Great Furnace]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[Great Furnace]]></LOCALISED_TEXT>
+  </TITLE>
+  <MULTIVERSEID value="4384" />
+  <ARTID value="8884384" />
+  <ARTIST name="Rob Alexander" />
+  <CASTING_COST cost="{}" />
+<FLAVOURTEXT> -<LOCALISED_TEXT LanguageCode="en-US">
+<![CDATA[Kuldotha, wellspring of molten metal, temple of the goblin horde.]]>
+</LOCALISED_TEXT> -<LOCALISED_TEXT LanguageCode="fr-FR">
+<![CDATA[Kuldotha, wellspring of molten metal, temple of the goblin horde.]]>
+</LOCALISED_TEXT> -<LOCALISED_TEXT LanguageCode="es-ES">
+<![CDATA[Kuldotha, wellspring of molten metal, temple of the goblin horde.]]>
+</LOCALISED_TEXT> -<LOCALISED_TEXT LanguageCode="de-DE">
+<![CDATA[Kuldotha, wellspring of molten metal, temple of the goblin horde.]]>
+</LOCALISED_TEXT> -<LOCALISED_TEXT LanguageCode="it-IT">
+<![CDATA[Kuldotha, wellspring of molten metal, temple of the goblin horde.]]>
+</LOCALISED_TEXT> -<LOCALISED_TEXT LanguageCode="jp-JA">
+<![CDATA[Kuldotha, wellspring of molten metal, temple of the goblin horde.]]>
+</LOCALISED_TEXT> -<LOCALISED_TEXT LanguageCode="ko-KR">
+<![CDATA[Kuldotha, wellspring of molten metal, temple of the goblin horde.]]>
+</LOCALISED_TEXT> -<LOCALISED_TEXT LanguageCode="ru-RU">
+<![CDATA[Kuldotha, wellspring of molten metal, temple of the goblin horde.]]>
+</LOCALISED_TEXT> -<LOCALISED_TEXT LanguageCode="pt-BR">
+<![CDATA[Kuldotha, wellspring of molten metal, temple of the goblin horde.]]>
+</LOCALISED_TEXT> </FLAVOURTEXT>
+  <TYPE metaname="Land" />
+  <SUPERTYPE metaname= "Artifact"/>
+  <EXPANSION value="DPG" />
+  <RARITY metaname="C" />
+  <MANA_ABILITY>
+    <COST type="TapSelf" />
+    <PRODUCES amount="{R}" />
+  </MANA_ABILITY>
+  <AI_BASE_SCORE score="450" zone="ZONE_IN_PLAY" />
+</CARD_V2>

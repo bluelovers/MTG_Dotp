@@ -1,0 +1,48 @@
+<?xml version='1.0'?>
+<CARD_V2>
+  <FILENAME text="TREE_OF_TALES_19881000" />
+  <CARDNAME text="TREE_OF_TALES" />
+  <TITLE>
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[Tree of Tales]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[Tree of Tales]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[Tree of Tales]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[Tree of Tales]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[Tree of Tales]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[Tree of Tales]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[Tree of Tales]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[Tree of Tales]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[Tree of Tales]]></LOCALISED_TEXT>
+  </TITLE>
+  <MULTIVERSEID value="19881000" />
+  <ARTID value="19881000" />
+  <ARTIST name="Rob Alexander" />
+  <CASTING_COST cost="{}" />
+<FLAVOURTEXT> -<LOCALISED_TEXT LanguageCode="en-US">
+<![CDATA[Tel-Jilad, sactum of the ancient trolls, keepers of the secret of Mirrodin's origin.]]>
+</LOCALISED_TEXT> -<LOCALISED_TEXT LanguageCode="fr-FR">
+<![CDATA[Tel-Jilad, sactum of the ancient trolls, keepers of the secret of Mirrodin's origin.]]>
+</LOCALISED_TEXT> -<LOCALISED_TEXT LanguageCode="es-ES">
+<![CDATA[Tel-Jilad, sactum of the ancient trolls, keepers of the secret of Mirrodin's origin.]]>
+</LOCALISED_TEXT> -<LOCALISED_TEXT LanguageCode="de-DE">
+<![CDATA[Tel-Jilad, sactum of the ancient trolls, keepers of the secret of Mirrodin's origin.]]>
+</LOCALISED_TEXT> -<LOCALISED_TEXT LanguageCode="it-IT">
+<![CDATA[Tel-Jilad, sactum of the ancient trolls, keepers of the secret of Mirrodin's origin.]]>
+</LOCALISED_TEXT> -<LOCALISED_TEXT LanguageCode="jp-JA">
+<![CDATA[Tel-Jilad, sactum of the ancient trolls, keepers of the secret of Mirrodin's origin.]]>
+</LOCALISED_TEXT> -<LOCALISED_TEXT LanguageCode="ko-KR">
+<![CDATA[Tel-Jilad, sactum of the ancient trolls, keepers of the secret of Mirrodin's origin.]]>
+</LOCALISED_TEXT> -<LOCALISED_TEXT LanguageCode="ru-RU">
+<![CDATA[Tel-Jilad, sactum of the ancient trolls, keepers of the secret of Mirrodin's origin.]]>
+</LOCALISED_TEXT> -<LOCALISED_TEXT LanguageCode="pt-BR">
+<![CDATA[Tel-Jilad, sactum of the ancient trolls, keepers of the secret of Mirrodin's origin.]]>
+</LOCALISED_TEXT> </FLAVOURTEXT>
+  <TYPE metaname="Land" />
+  <SUPERTYPE metaname= "Artifact"/>
+  <EXPANSION value="DPG" />
+  <RARITY metaname="C" />
+  <MANA_ABILITY>
+    <COST type="TapSelf" />
+    <PRODUCES amount="{G}" />
+  </MANA_ABILITY>
+  <AI_BASE_SCORE score="450" zone="ZONE_IN_PLAY" />
+</CARD_V2>

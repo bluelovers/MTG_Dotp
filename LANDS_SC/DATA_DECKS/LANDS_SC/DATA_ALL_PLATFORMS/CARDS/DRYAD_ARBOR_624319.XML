@@ -1,0 +1,75 @@
+﻿<?xml version='1.0'?>
+<CARD_V2>
+  <FILENAME text="DRYAD_ARBOR_624319" />
+  <CARDNAME text="DRYAD_ARBOR" />
+  <TITLE>
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[Dryad Arbor]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[Dryad Arbor]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[Dryad Arbor]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[Dryad Arbor]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[Dryad Arbor]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[Dryad Arbor]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[Dryad Arbor]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[Dryad Arbor]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[Dryad Arbor]]></LOCALISED_TEXT>
+  </TITLE>
+  <MULTIVERSEID value="624319" />
+  <ARTID value="624319" />
+  <COLOUR value="G" />
+  <ARTIST name="Eric Fortune" />
+  <CASTING_COST cost="" />
+  <TYPE metaname="Land" />
+  <TYPE metaname="Creature" />
+  <SUB_TYPE metaname="Forest" order_de-DE="0" order_es-ES="0" order_fr-FR="0" order_it-IT="0" order_jp-JA="0" order_ko-KR="0" order_pt-BR="0" order_ru-RU="0" />
+  <SUB_TYPE metaname="Dryad" order_de-DE="0" order_es-ES="0" order_fr-FR="0" order_it-IT="0" order_jp-JA="0" order_ko-KR="0" order_pt-BR="0" order_ru-RU="0" />
+  <EXPANSION value="DPG" />
+  <RARITY metaname="U" />
+  <POWER value="1" />
+  <TOUGHNESS value="1" />
+  <MANA_ABILITY filter_zone="ZONE_IN_PLAY">
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[|(Dryad Arbor isn’t a spell, it’s affected by summoning sickness, and it has “|{T}|: Add |{G} |to your mana pool.”)|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[|(Dryad Arbor isn’t a spell, it’s affected by summoning sickness, and it has “|{T}|: Add |{G} |to your mana pool.”)|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[|(Dryad Arbor isn’t a spell, it’s affected by summoning sickness, and it has “|{T}|: Add |{G} |to your mana pool.”)|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[|(Dryad Arbor isn’t a spell, it’s affected by summoning sickness, and it has “|{T}|: Add |{G} |to your mana pool.”)|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[|(Dryad Arbor isn’t a spell, it’s affected by summoning sickness, and it has “|{T}|: Add |{G} |to your mana pool.”)|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[|(Dryad Arbor isn’t a spell, it’s affected by summoning sickness, and it has “|{T}|: Add |{G} |to your mana pool.”)|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[|(Dryad Arbor isn’t a spell, it’s affected by summoning sickness, and it has “|{T}|: Add |{G} |to your mana pool.”)|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[|(Dryad Arbor isn’t a spell, it’s affected by summoning sickness, and it has “|{T}|: Add |{G} |to your mana pool.”)|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[|(Dryad Arbor isn’t a spell, it’s affected by summoning sickness, and it has “|{T}|: Add |{G} |to your mana pool.”)|]]></LOCALISED_TEXT>
+    <COST type="TapSelf" />
+    <PRODUCES amount="{G}" />
+  </MANA_ABILITY>
+  <STATIC_ABILITY>
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[Dryad Arbor is green.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[Dryad Arbor is green.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[Dryad Arbor is green.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[Dryad Arbor is green.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[Dryad Arbor is green.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[Dryad Arbor is green.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[Dryad Arbor is green.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[Dryad Arbor is green.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[Dryad Arbor is green.]]></LOCALISED_TEXT>
+  </STATIC_ABILITY>
+  <STATIC_ABILITY>
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[|“Touch no tree, break no branch, and speak only the question you wish answered.”|
+|—Von Yomm, elder druid, to her initiates|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[|“Touch no tree, break no branch, and speak only the question you wish answered.”|
+|—Von Yomm, elder druid, to her initiates|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[|“Touch no tree, break no branch, and speak only the question you wish answered.”|
+|—Von Yomm, elder druid, to her initiates|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[|“Touch no tree, break no branch, and speak only the question you wish answered.”|
+|—Von Yomm, elder druid, to her initiates|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[|“Touch no tree, break no branch, and speak only the question you wish answered.”|
+|—Von Yomm, elder druid, to her initiates|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[|“Touch no tree, break no branch, and speak only the question you wish answered.”|
+|—Von Yomm, elder druid, to her initiates|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[|“Touch no tree, break no branch, and speak only the question you wish answered.”|
+|—Von Yomm, elder druid, to her initiates|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[|“Touch no tree, break no branch, and speak only the question you wish answered.”|
+|—Von Yomm, elder druid, to her initiates|]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[|“Touch no tree, break no branch, and speak only the question you wish answered.”|
+|—Von Yomm, elder druid, to her initiates|]]></LOCALISED_TEXT>
+  </STATIC_ABILITY>
+  <SFX text="COMBAT_GREEN_MAGIC_LARGE_ATTACK" power_boundary_min="4" power_boundary_max="-1" />
+  <SFX text="COMBAT_GREEN_MAGIC_SMALL_ATTACK" power_boundary_min="1" power_boundary_max="3" />
+</CARD_V2>

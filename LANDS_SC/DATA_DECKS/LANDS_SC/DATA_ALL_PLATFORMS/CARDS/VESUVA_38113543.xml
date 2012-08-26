@@ -1,0 +1,98 @@
+﻿<?xml version='1.0'?>
+<CARD_V2>
+  <FILENAME text="VESUVA_38113543" />
+  <CARDNAME text="VESUVA" />
+  <TITLE>
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[Vesuva]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[Vesuva]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[Vesuva]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[Vésuva]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[Vesuva]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[ヴェズーヴァ]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[Vesuva]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[Везува]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[Vesuva]]></LOCALISED_TEXT>
+  </TITLE>
+  <MULTIVERSEID value="38113543" />
+  <ARTID value="38113543" />
+  <ARTIST name="Zoltan Boros &amp; Gabor Szikszai" />
+  <CASTING_COST cost="" />
+  <FLAVOURTEXT>
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[It is everywhere you’ve ever been.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[È ovunque tu sia mai stato.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[Es ist überall, wo du jemals schon gewesen bist.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[C’est partout où vous avez été.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[Es todos los lugares que has visitado.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[君がいたあらゆる場所。]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[It is everywhere you’ve ever been.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[Она — это все, где ты когда-либо побывал.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[Onde você reencontra todos os lugares onde já esteve.]]></LOCALISED_TEXT>
+  </FLAVOURTEXT>
+  <TYPE metaname="Land" />
+  <EXPANSION value="DPG" />
+  <RARITY metaname="R" />
+  <TRIGGERED_ABILITY replacement_query="1" filter_zone="ZONE_IN_PLAY" active_zone="ZONE_TRANSITION">
+    <LOCALISED_TEXT LanguageCode="en-US"><![CDATA[You may have Vesuva enter the battlefield tapped as a copy of any land on the battlefield.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="fr-FR"><![CDATA[Vous pouvez faire que le Vésuva arrive sur le champ de bataille engagée comme une copie de n’importe quel terrain sur le champ de bataille.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="es-ES"><![CDATA[Puedes hacer que Vesuva entre al campo de batalla girada como una copia de cualquier tierra en el campo de batalla.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="de-DE"><![CDATA[Du kannst Vesuva als Kopie einer beliebigen Land, die sich im Spiel befindet, getappt ins Spiel kommen lassen.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="it-IT"><![CDATA[Puoi far entrare Vesuva nel campo di battaglia TAPpata come una copia di qualsiasi terra sul campo di battaglia.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="jp-JA"><![CDATA[ヴェズーヴァが場に出るに際し、あなたは場に出ている土地１つを選んでもよい。 そうした場合、ヴェズーヴァは選んだ土地のコピーとして、タップ状態で場に出る。]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ko-KR"><![CDATA[You may have Vesuva enter the battlefield tapped as a copy of any land on the battlefield.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="ru-RU"><![CDATA[При входе Везувы в игру вы можете выбрать землю в игре. Если вы сделали это, Везува входит в игру повернутой как копия выбранной земли.]]></LOCALISED_TEXT>
+    <LOCALISED_TEXT LanguageCode="pt-BR"><![CDATA[Você pode fazer com que Vesuva entre no campo de batalha virada como uma cópia de qualquer terreno no campo de batalha.]]></LOCALISED_TEXT>
+    <TRIGGER value="ZONECHANGE_TRANSITION" simple_qualifier="self" to_zone="ZONE_IN_PLAY" />
+    <TARGET_DEFINITION id="0">
+    local filter = Object():GetFilter()
+    filter:Clear()
+    filter:AddCardType( CARD_TYPE_LAND )
+    filter:SetZone( ZONE_IN_PLAY )
+    filter:SetHint( HINT_NEUTRAL, EffectController() )
+    filter:May()
+    filter:NotTargetted()
+    </TARGET_DEFINITION>
+    <TARGET_DETERMINATION>
+    return AtLeastOneTargetFromDefinition(0)
+    </TARGET_DETERMINATION>
+    <PLAY_TIME_ACTION target_choosing="1">
+    EffectController():ChooseTarget( 0, "1138_QUERY_CHOOSE_LAND_TO_CLONE", EffectDC():Make_Targets(0) )
+    </PLAY_TIME_ACTION>
+    <RESOLUTION_TIME_ACTION>
+    local target_land = EffectDC():Get_Targets(0):Get_CardPtr(0)
+    if ( target_land ~= nil ) then
+    	target_land:StoreCopiableValues(EffectDC():Make_Chest(1))	-- this grabs the copiable values from the target and puts them into a datachest
+    	EffectSource():UseCopiableValues(EffectDC():Get_Chest(1))		-- this needs to be here to refire any other transition triggers (e.g. devour)
+    	EffectDC():Protect_CardPtr( COMPARTMENT_ID_EFFECT_SOURCE )      -- this stops the effect from being wiped when we complete the zonechange
+
+    	-- this makes the land enter the battlefield tapped only if it cloned something
+    	local delayDC = EffectDC():Make_Chest(2)
+    	delayDC:Set_CardPtr(0, Object())
+    	delayDC:Protect_CardPtr(0)
+    	MTG():CreateDelayedTrigger(2, delayDC)
+    end
+    </RESOLUTION_TIME_ACTION>
+    <CONTINUOUS_ACTION layer="1">
+    if EffectSource() ~= nil and EffectDC():Get_Chest(1) ~= nil then
+    	EffectSource():UseCopiableValues(EffectDC():Get_Chest(1))
+    end
+    </CONTINUOUS_ACTION>
+    <DURATION>
+    return (EffectSource() == nil)
+    </DURATION>
+  </TRIGGERED_ABILITY>
+  <TRIGGERED_ABILITY resource_id="2" internal="1" filter_zone="ZONE_IN_PLAY">
+    <CLEANUP fire_once="1" />
+    <TRIGGER value="ZONECHANGE_END" to_zone="ZONE_IN_PLAY">
+    local object = EffectDC():Get_CardPtr(0)
+    if object ~= nil then
+    	return TriggerObject() == object
+    end
+    return false
+    </TRIGGER>
+    <RESOLUTION_TIME_ACTION>
+    if TriggerObject() ~= nil then
+    	TriggerObject():ComesIntoPlayTapped()
+    end
+    </RESOLUTION_TIME_ACTION>
+  </TRIGGERED_ABILITY>
+</CARD_V2>
